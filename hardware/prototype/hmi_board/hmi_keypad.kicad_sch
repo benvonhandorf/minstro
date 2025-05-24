@@ -1002,7 +1002,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 60.96) (xy 234.95 60.96)
+			(xy 228.6 54.61) (xy 233.68 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1082,7 +1082,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 106.68) (xy 248.92 106.68)
+			(xy 243.84 97.79) (xy 247.65 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1152,7 +1152,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 82.55) (xy 247.65 82.55)
+			(xy 243.84 76.2) (xy 247.65 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1172,7 +1172,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 64.77) (xy 240.03 67.31)
+			(xy 238.76 58.42) (xy 238.76 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1192,7 +1192,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 86.36) (xy 238.76 88.9)
+			(xy 238.76 80.01) (xy 238.76 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1292,7 +1292,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 60.96) (xy 248.92 60.96)
+			(xy 243.84 54.61) (xy 247.65 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1472,7 +1472,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 110.49) (xy 240.03 114.3)
+			(xy 238.76 101.6) (xy 238.76 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1532,7 +1532,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 106.68) (xy 234.95 106.68)
+			(xy 228.6 97.79) (xy 233.68 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1642,7 +1642,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 82.55) (xy 233.68 82.55)
+			(xy 228.6 76.2) (xy 233.68 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1911,7 +1911,7 @@
 		(uuid "ffbdc929-20cd-47a3-acea-cf85b32cd625")
 	)
 	(label "COL_3L"
-		(at 228.6 82.55 180)
+		(at 228.6 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1941,7 +1941,7 @@
 		(uuid "48f3d612-307d-431f-a0a4-0aa401af5c31")
 	)
 	(label "COL_4L"
-		(at 229.87 106.68 180)
+		(at 228.6 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1951,7 +1951,7 @@
 		(uuid "669be3bc-e201-4947-a1d0-ffb3bf01ef82")
 	)
 	(label "COL_2L"
-		(at 229.87 60.96 180)
+		(at 228.6 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2014,7 +2014,7 @@
 	)
 	(hierarchical_label "COL_2"
 		(shape input)
-		(at 248.92 60.96 0)
+		(at 247.65 54.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2047,7 +2047,7 @@
 	)
 	(hierarchical_label "COL_3"
 		(shape input)
-		(at 247.65 82.55 0)
+		(at 247.65 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2058,7 +2058,7 @@
 	)
 	(hierarchical_label "COL_4"
 		(shape input)
-		(at 248.92 106.68 0)
+		(at 247.65 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2499,7 +2499,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 238.76 82.55 0)
+		(at 238.76 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2508,23 +2508,23 @@
 		(fields_autoplaced yes)
 		(uuid "2ebe3c33-d693-453c-a865-43f65985386a")
 		(property "Reference" "JP403"
+			(at 238.76 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Col 3 Jumper"
+			(at 238.76 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
 			(at 238.76 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_3_Bridged12"
-			(at 238.76 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 238.76 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2533,7 +2533,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 238.76 82.55 0)
+			(at 238.76 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2542,7 +2542,7 @@
 			)
 		)
 		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-			(at 238.76 82.55 0)
+			(at 238.76 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3114,7 +3114,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 240.03 106.68 0)
+		(at 238.76 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3123,23 +3123,23 @@
 		(fields_autoplaced yes)
 		(uuid "676ff36e-70ef-4822-b265-4e6a535f5781")
 		(property "Reference" "JP404"
-			(at 240.03 100.33 0)
+			(at 238.76 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SolderJumper_3_Bridged12"
-			(at 240.03 102.87 0)
+		(property "Value" "Col 4 Jumper"
+			(at 238.76 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 240.03 106.68 0)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+			(at 238.76 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3148,7 +3148,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 106.68 0)
+			(at 238.76 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3157,7 +3157,7 @@
 			)
 		)
 		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-			(at 240.03 106.68 0)
+			(at 238.76 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3389,7 +3389,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 238.76 88.9 0)
+		(at 238.76 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3398,7 +3398,7 @@
 		(fields_autoplaced yes)
 		(uuid "780366a9-49e6-453b-a056-9dafec549508")
 		(property "Reference" "#PWR0404"
-			(at 238.76 95.25 0)
+			(at 238.76 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3407,7 +3407,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 238.76 93.98 0)
+			(at 238.76 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3415,7 +3415,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 238.76 88.9 0)
+			(at 238.76 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3424,7 +3424,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 88.9 0)
+			(at 238.76 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3433,7 +3433,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 238.76 88.9 0)
+			(at 238.76 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3727,7 +3727,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 240.03 60.96 0)
+		(at 238.76 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3736,23 +3736,23 @@
 		(fields_autoplaced yes)
 		(uuid "9add9931-98ec-492c-8d1a-362a485aa53d")
 		(property "Reference" "JP402"
-			(at 240.03 54.61 0)
+			(at 238.76 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SolderJumper_3_Bridged12"
-			(at 240.03 57.15 0)
+		(property "Value" "Col 2 Jumper"
+			(at 238.76 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 240.03 60.96 0)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+			(at 238.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3761,7 +3761,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 60.96 0)
+			(at 238.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3770,7 +3770,7 @@
 			)
 		)
 		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-			(at 240.03 60.96 0)
+			(at 238.76 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3950,7 +3950,7 @@
 				)
 			)
 		)
-		(property "Value" "SolderJumper_3_Bridged12"
+		(property "Value" "Col 1 Jumper"
 			(at 238.76 29.21 0)
 			(effects
 				(font
@@ -3958,7 +3958,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
 			(at 238.76 33.02 0)
 			(effects
 				(font
@@ -4071,7 +4071,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 240.03 114.3 0)
+		(at 238.76 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4080,7 +4080,7 @@
 		(fields_autoplaced yes)
 		(uuid "afd277cf-9f0d-48c3-8700-8b8b8d53c5b1")
 		(property "Reference" "#PWR0405"
-			(at 240.03 120.65 0)
+			(at 238.76 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4089,7 +4089,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 119.38 0)
+			(at 238.76 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4097,7 +4097,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 114.3 0)
+			(at 238.76 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4106,7 +4106,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 114.3 0)
+			(at 238.76 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4115,7 +4115,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 114.3 0)
+			(at 238.76 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4613,7 +4613,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 240.03 67.31 0)
+		(at 238.76 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4622,7 +4622,7 @@
 		(fields_autoplaced yes)
 		(uuid "e116279d-04be-438c-b863-54efb997f6dc")
 		(property "Reference" "#PWR0403"
-			(at 240.03 73.66 0)
+			(at 238.76 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4631,7 +4631,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 72.39 0)
+			(at 238.76 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4639,7 +4639,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 67.31 0)
+			(at 238.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4648,7 +4648,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 67.31 0)
+			(at 238.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4657,7 +4657,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 67.31 0)
+			(at 238.76 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)

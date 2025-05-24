@@ -1,0 +1,98 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "abd7db12-40ec-457f-8963-ac0fca439f58")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 147.32 71.12)
+		(size 25.4 45.72)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7e333f68-04b8-45b1-8562-3824621fc04d")
+		(property "Sheetname" "Display Connectors"
+			(at 147.32 70.4084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "display_connectors.kicad_sch"
+			(at 147.32 117.4246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "display_board"
+				(path "/abd7db12-40ec-457f-8963-ac0fca439f58"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 72.39)
+		(size 26.67 45.72)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d92400af-2c99-4541-b0b5-3364e61cbf07")
+		(property "Sheetname" "Microcontroller"
+			(at 88.9 71.6784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "display_microcontroller.kicad_sch"
+			(at 88.9 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "display_board"
+				(path "/abd7db12-40ec-457f-8963-ac0fca439f58"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
