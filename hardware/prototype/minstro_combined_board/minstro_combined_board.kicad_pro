@@ -25,16 +25,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "multiple_net_names|1130300|342900|35c2df4a-d237-4a65-9582-6512e3dbef44|48f3d612-307d-431f-a0a4-0aa401af5c31|/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f|/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f|/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f",
-        ""
-      ],
-      [
-        "multiple_net_names|1511300|825500|7581e48b-e629-4182-a851-5844785134bc|ca3faff3-f44a-4823-9082-9939bbfff2bf|/6e1e1d08-8a14-498a-9c8b-9e866526b98e/9022401b-42aa-4d92-a732-0bfa0d5e6a37|/6e1e1d08-8a14-498a-9c8b-9e866526b98e/9022401b-42aa-4d92-a732-0bfa0d5e6a37|/6e1e1d08-8a14-498a-9c8b-9e866526b98e/9022401b-42aa-4d92-a732-0bfa0d5e6a37",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -258,7 +249,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "hmi_board.kicad_pro",
+    "filename": "minstro_combined_board.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -418,24 +409,44 @@
   },
   "sheets": [
     [
-      "6e1e1d08-8a14-498a-9c8b-9e866526b98e",
+      "edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10",
       "Root"
     ],
     [
-      "26f494af-43b3-4420-9876-64725e586b70",
-      "Microcontroller"
+      "086f9e56-9693-405a-89d2-fb80faeca10e",
+      "Power"
     ],
     [
-      "4dddfd06-e1e7-4fd8-9aeb-fc59c54cc5c7",
+      "e86c5b72-a6ee-4f4b-b668-507d3abeaf42",
+      "Battery"
+    ],
+    [
+      "f8b73dba-3bd2-4715-a78c-fbce9d68ac6b",
+      "ESP32 Microcontroller"
+    ],
+    [
+      "9fd1c103-4dad-4bda-8b9e-cec55eee41ff",
+      "Audio"
+    ],
+    [
+      "3cf64798-7e0b-4fcb-a543-023649f7a7ac",
+      "Display Connectors"
+    ],
+    [
+      "e7d7ed5c-7a0d-40e5-948b-719d08b13ce9",
+      "HMI Controller"
+    ],
+    [
+      "fcc80a4b-0de6-4057-ab0a-ee82ee462c6d",
       "Nav Switch"
     ],
     [
-      "bf91a51e-2b31-424f-aa43-e76db244c75f",
-      "Keypad"
+      "cfb393c8-7347-49f3-a406-88d649743539",
+      "HMI Keypad"
     ],
     [
-      "9022401b-42aa-4d92-a732-0bfa0d5e6a37",
-      "VFO"
+      "0056968a-0c1d-4a8a-9224-b2ac4a6e25ff",
+      "HMI VFO"
     ]
   ],
   "text_variables": {}

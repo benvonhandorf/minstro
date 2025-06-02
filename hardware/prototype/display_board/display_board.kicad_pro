@@ -25,7 +25,28 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "multiple_net_names|1219200|673100|97051f0b-e951-41e9-88da-42821fe46201|13822d31-fd84-432b-945a-a526c77e11d6|/abd7db12-40ec-457f-8963-ac0fca439f58/3d454be4-9cfc-4b90-94a8-07b8f9f8c90a|/abd7db12-40ec-457f-8963-ac0fca439f58/3d454be4-9cfc-4b90-94a8-07b8f9f8c90a|/abd7db12-40ec-457f-8963-ac0fca439f58/3d454be4-9cfc-4b90-94a8-07b8f9f8c90a",
+        ""
+      ],
+      [
+        "multiple_net_names|1231900|901700|f3059ed4-eb5e-40f1-bac9-47ecbdb2f2e1|78750d79-48fc-4fbd-a20f-01a6a31853e4|/abd7db12-40ec-457f-8963-ac0fca439f58/b29ccdf4-53c4-43be-98af-d4e89012c2ae|/abd7db12-40ec-457f-8963-ac0fca439f58/b29ccdf4-53c4-43be-98af-d4e89012c2ae|/abd7db12-40ec-457f-8963-ac0fca439f58/b29ccdf4-53c4-43be-98af-d4e89012c2ae",
+        ""
+      ],
+      [
+        "multiple_net_names|1231900|927100|16723534-3b9f-449b-8556-22a6607b75fb|1f01d561-70e6-47d6-b56b-45ef384f9281|/abd7db12-40ec-457f-8963-ac0fca439f58/b29ccdf4-53c4-43be-98af-d4e89012c2ae|/abd7db12-40ec-457f-8963-ac0fca439f58/b29ccdf4-53c4-43be-98af-d4e89012c2ae|/abd7db12-40ec-457f-8963-ac0fca439f58/b29ccdf4-53c4-43be-98af-d4e89012c2ae",
+        ""
+      ],
+      [
+        "multiple_net_names|1587500|228600|882fdcfc-c016-4768-95f6-5c2f23b2a433|5b4ee43e-fd51-44e9-8aa9-51a43a62b8d6|/abd7db12-40ec-457f-8963-ac0fca439f58/d92400af-2c99-4541-b0b5-3364e61cbf07|/abd7db12-40ec-457f-8963-ac0fca439f58/d92400af-2c99-4541-b0b5-3364e61cbf07|/abd7db12-40ec-457f-8963-ac0fca439f58/d92400af-2c99-4541-b0b5-3364e61cbf07",
+        ""
+      ],
+      [
+        "multiple_net_names|2514600|1206500|bc5ff595-a963-44e3-9c38-9cddaeed4e0f|a93387e9-73d5-4d9b-bee7-9400720e8f87|/abd7db12-40ec-457f-8963-ac0fca439f58/a6e0d94b-c4e5-4aef-afc1-e4ded1dc79f8|/abd7db12-40ec-457f-8963-ac0fca439f58/a6e0d94b-c4e5-4aef-afc1-e4ded1dc79f8|/abd7db12-40ec-457f-8963-ac0fca439f58/a6e0d94b-c4e5-4aef-afc1-e4ded1dc79f8",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -413,12 +434,24 @@
       "Root"
     ],
     [
+      "3d454be4-9cfc-4b90-94a8-07b8f9f8c90a",
+      "Power Regulation"
+    ],
+    [
       "d92400af-2c99-4541-b0b5-3364e61cbf07",
       "Microcontroller"
     ],
     [
       "7e333f68-04b8-45b1-8562-3824621fc04d",
       "Display Connectors"
+    ],
+    [
+      "a6e0d94b-c4e5-4aef-afc1-e4ded1dc79f8",
+      "Audio"
+    ],
+    [
+      "b29ccdf4-53c4-43be-98af-d4e89012c2ae",
+      "Battery"
     ]
   ],
   "text_variables": {}

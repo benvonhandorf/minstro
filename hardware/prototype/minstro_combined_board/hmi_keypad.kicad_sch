@@ -2182,6 +2182,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "R406")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2246,6 +2252,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "SW417")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "SW417")
 					(unit 1)
 				)
@@ -2318,6 +2330,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW410")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2380,6 +2398,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "#PWR0404")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "#PWR0404")
 					(unit 1)
 				)
@@ -2452,6 +2476,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW413")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2516,6 +2546,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "R403")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "R403")
 					(unit 1)
 				)
@@ -2588,6 +2624,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW402")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2652,6 +2694,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "R409")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "R409")
 					(unit 1)
 				)
@@ -2724,6 +2772,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "R404")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2788,6 +2842,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "R405")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "R405")
 					(unit 1)
 				)
@@ -2860,6 +2920,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW412")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2924,6 +2990,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "R411")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "R411")
 					(unit 1)
 				)
@@ -2996,6 +3068,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "R402")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3058,6 +3136,12 @@
 		(instances
 			(project ""
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "#PWR0403")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "#PWR0403")
 					(unit 1)
 				)
@@ -3130,6 +3214,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "R401")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3194,6 +3284,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "R413")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "R413")
 					(unit 1)
 				)
@@ -3266,6 +3362,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW406")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3330,6 +3432,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "R408")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "R408")
 					(unit 1)
 				)
@@ -3402,6 +3510,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW404")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3466,6 +3580,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "SW407")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "SW407")
 					(unit 1)
 				)
@@ -3538,6 +3658,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "R414")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3606,6 +3732,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "R416")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3670,6 +3802,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "R412")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "R412")
 					(unit 1)
 				)
@@ -3748,6 +3886,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "D401")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3812,6 +3956,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "SW403")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "SW403")
 					(unit 1)
 				)
@@ -3884,6 +4034,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW401")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3950,6 +4106,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "#PWR0401")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4012,6 +4174,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "#PWR0402")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "#PWR0402")
 					(unit 1)
 				)
@@ -4084,6 +4252,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "R410")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4148,6 +4322,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "SW411")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "SW411")
 					(unit 1)
 				)
@@ -4220,6 +4400,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW415")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4284,6 +4470,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "SW416")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "SW416")
 					(unit 1)
 				)
@@ -4356,6 +4548,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW409")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4420,6 +4618,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "SW405")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "SW405")
 					(unit 1)
 				)
@@ -4492,6 +4696,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW414")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4556,6 +4766,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "R407")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "R407")
 					(unit 1)
 				)
@@ -4628,6 +4844,12 @@
 					(unit 1)
 				)
 			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "SW408")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4692,6 +4914,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
+					(reference "R415")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "R415")
 					(unit 1)
 				)

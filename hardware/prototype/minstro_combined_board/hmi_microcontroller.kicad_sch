@@ -1335,6 +1335,12 @@
 					(unit 1)
 				)
 			)
+			(project ""
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/e7d7ed5c-7a0d-40e5-948b-719d08b13ce9"
+					(reference "#PWR0201")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -1397,6 +1403,12 @@
 		(instances
 			(project ""
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/26f494af-43b3-4420-9876-64725e586b70"
+					(reference "#PWR0202")
+					(unit 1)
+				)
+			)
+			(project ""
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/e7d7ed5c-7a0d-40e5-948b-719d08b13ce9"
 					(reference "#PWR0202")
 					(unit 1)
 				)
@@ -1536,6 +1548,12 @@
 		(instances
 			(project "hmi_board"
 				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/26f494af-43b3-4420-9876-64725e586b70"
+					(reference "U201")
+					(unit 1)
+				)
+			)
+			(project "hmi_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/e7d7ed5c-7a0d-40e5-948b-719d08b13ce9"
 					(reference "U201")
 					(unit 1)
 				)
