@@ -1281,7 +1281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bd558c5-54b0-468b-9629-6a5788fd10c5")
-		(property "Reference" "#PWR0201"
+		(property "Reference" "#PWR0701"
 			(at 66.04 77.47 0)
 			(effects
 				(font
@@ -1337,7 +1337,7 @@
 			)
 			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/e7d7ed5c-7a0d-40e5-948b-719d08b13ce9"
-					(reference "#PWR0201")
+					(reference "#PWR0701")
 					(unit 1)
 				)
 			)
@@ -1353,7 +1353,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18cc9e6a-9a11-45b8-9d2f-fdf35d730dea")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR0702"
 			(at 66.04 139.7 0)
 			(effects
 				(font
@@ -1409,7 +1409,7 @@
 			)
 			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/e7d7ed5c-7a0d-40e5-948b-719d08b13ce9"
-					(reference "#PWR0202")
+					(reference "#PWR0702")
 					(unit 1)
 				)
 			)
@@ -1425,7 +1425,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40cb681e-8f97-4736-91ff-0ecb2a1ecad8")
-		(property "Reference" "U201"
+		(property "Reference" "U701"
 			(at 68.1833 76.2 0)
 			(effects
 				(font
@@ -1554,7 +1554,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/e7d7ed5c-7a0d-40e5-948b-719d08b13ce9"
-					(reference "U201")
+					(reference "U701")
 					(unit 1)
 				)
 			)

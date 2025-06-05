@@ -2126,7 +2126,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00e55f03-e2b5-4123-8f0e-18728a633aac")
-		(property "Reference" "R406"
+		(property "Reference" "R906"
 			(at 93.98 63.5 90)
 			(effects
 				(font
@@ -2184,7 +2184,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R406")
+					(reference "R906")
 					(unit 1)
 				)
 			)
@@ -2200,7 +2200,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07848466-e61d-46d4-ad12-0028bcb02d18")
-		(property "Reference" "SW417"
+		(property "Reference" "SW917"
 			(at 119.38 90.17 0)
 			(effects
 				(font
@@ -2258,7 +2258,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW417")
+					(reference "SW917")
 					(unit 1)
 				)
 			)
@@ -2274,7 +2274,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c98e89c-2df7-4512-b011-f6d1e9f6b790")
-		(property "Reference" "SW410"
+		(property "Reference" "SW910"
 			(at 68.58 73.66 0)
 			(effects
 				(font
@@ -2332,7 +2332,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW410")
+					(reference "SW910")
 					(unit 1)
 				)
 			)
@@ -2348,7 +2348,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10a2b061-f29c-4f6b-b38f-312943dd2f79")
-		(property "Reference" "#PWR0404"
+		(property "Reference" "#PWR0904"
 			(at 62.23 142.24 0)
 			(effects
 				(font
@@ -2404,7 +2404,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "#PWR0404")
+					(reference "#PWR0904")
 					(unit 1)
 				)
 			)
@@ -2420,7 +2420,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1cc30ef9-703b-4251-97bd-6e88050228a3")
-		(property "Reference" "SW413"
+		(property "Reference" "SW913"
 			(at 119.38 73.66 0)
 			(effects
 				(font
@@ -2478,7 +2478,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW413")
+					(reference "SW913")
 					(unit 1)
 				)
 			)
@@ -2494,7 +2494,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1dd0797c-18d7-4e24-8f09-b9957e893270")
-		(property "Reference" "R403"
+		(property "Reference" "R903"
 			(at 110.49 46.99 90)
 			(effects
 				(font
@@ -2552,7 +2552,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R403")
+					(reference "R903")
 					(unit 1)
 				)
 			)
@@ -2568,7 +2568,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24f8415c-6e38-45d7-bd0f-8548307a243a")
-		(property "Reference" "SW402"
+		(property "Reference" "SW902"
 			(at 68.58 40.64 0)
 			(effects
 				(font
@@ -2626,7 +2626,7 @@
 			)
 			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW402")
+					(reference "SW902")
 					(unit 1)
 				)
 			)
@@ -2642,7 +2642,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35f133ac-d021-44fc-95cf-c796ad514cd2")
-		(property "Reference" "R409"
+		(property "Reference" "R909"
 			(at 76.2 80.01 90)
 			(effects
 				(font
@@ -2700,7 +2700,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R409")
+					(reference "R909")
 					(unit 1)
 				)
 			)
@@ -2716,7 +2716,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "383027dd-d22a-4178-951b-580460a683fe")
-		(property "Reference" "R404"
+		(property "Reference" "R904"
 			(at 127 46.99 90)
 			(effects
 				(font
@@ -2774,7 +2774,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R404")
+					(reference "R904")
 					(unit 1)
 				)
 			)
@@ -2790,7 +2790,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38d457d2-38ff-4d3a-9a6a-983c95f30a32")
-		(property "Reference" "R405"
+		(property "Reference" "R905"
 			(at 76.2 63.5 90)
 			(effects
 				(font
@@ -2848,7 +2848,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R405")
+					(reference "R905")
 					(unit 1)
 				)
 			)
@@ -2864,7 +2864,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4205f9c8-14bb-4025-aa0a-d2297c190b44")
-		(property "Reference" "SW412"
+		(property "Reference" "SW912"
 			(at 102.87 73.66 0)
 			(effects
 				(font
@@ -2922,7 +2922,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW412")
+					(reference "SW912")
 					(unit 1)
 				)
 			)
@@ -2938,7 +2938,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42920ddd-e2a0-42d3-b00e-9e506bab5a30")
-		(property "Reference" "R411"
+		(property "Reference" "R911"
 			(at 110.49 80.01 90)
 			(effects
 				(font
@@ -2996,7 +2996,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R411")
+					(reference "R911")
 					(unit 1)
 				)
 			)
@@ -3012,7 +3012,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45500a6c-cbfc-4bd5-acee-49e0ab370fde")
-		(property "Reference" "R402"
+		(property "Reference" "R902"
 			(at 93.98 46.99 90)
 			(effects
 				(font
@@ -3070,7 +3070,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R402")
+					(reference "R902")
 					(unit 1)
 				)
 			)
@@ -3086,7 +3086,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f26d822-b302-4112-be8c-39a62fbc35de")
-		(property "Reference" "#PWR0403"
+		(property "Reference" "#PWR0903"
 			(at 63.5 118.11 0)
 			(effects
 				(font
@@ -3142,7 +3142,7 @@
 			)
 			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "#PWR0403")
+					(reference "#PWR0903")
 					(unit 1)
 				)
 			)
@@ -3158,7 +3158,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5eb71a95-0807-4005-bf57-a92acb8a3780")
-		(property "Reference" "R401"
+		(property "Reference" "R901"
 			(at 76.2 46.99 90)
 			(effects
 				(font
@@ -3216,7 +3216,7 @@
 			)
 			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R401")
+					(reference "R901")
 					(unit 1)
 				)
 			)
@@ -3232,7 +3232,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60e0e2d9-a6f9-4d30-b009-75caba1ee037")
-		(property "Reference" "R413"
+		(property "Reference" "R913"
 			(at 76.2 96.52 90)
 			(effects
 				(font
@@ -3290,7 +3290,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R413")
+					(reference "R913")
 					(unit 1)
 				)
 			)
@@ -3306,7 +3306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "677877a5-9c4a-4154-adb2-9754f98cd53d")
-		(property "Reference" "SW406"
+		(property "Reference" "SW906"
 			(at 68.58 57.15 0)
 			(effects
 				(font
@@ -3364,7 +3364,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW406")
+					(reference "SW906")
 					(unit 1)
 				)
 			)
@@ -3380,7 +3380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f7f26d8-3311-4f5f-8b61-4255ec5c011e")
-		(property "Reference" "R408"
+		(property "Reference" "R908"
 			(at 127 63.5 90)
 			(effects
 				(font
@@ -3438,7 +3438,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R408")
+					(reference "R908")
 					(unit 1)
 				)
 			)
@@ -3454,7 +3454,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "764fd6ba-b723-4421-9ebf-53bff00523a1")
-		(property "Reference" "SW404"
+		(property "Reference" "SW904"
 			(at 102.87 40.64 0)
 			(effects
 				(font
@@ -3512,7 +3512,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW404")
+					(reference "SW904")
 					(unit 1)
 				)
 			)
@@ -3528,7 +3528,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "853ef89a-4d7b-4ac6-9e04-b2455059fc63")
-		(property "Reference" "SW407"
+		(property "Reference" "SW907"
 			(at 86.36 57.15 0)
 			(effects
 				(font
@@ -3586,7 +3586,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW407")
+					(reference "SW907")
 					(unit 1)
 				)
 			)
@@ -3602,7 +3602,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88c8d7d9-0751-41d5-a915-857f06aea96a")
-		(property "Reference" "R414"
+		(property "Reference" "R914"
 			(at 93.98 96.52 90)
 			(effects
 				(font
@@ -3660,7 +3660,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R414")
+					(reference "R914")
 					(unit 1)
 				)
 			)
@@ -3676,7 +3676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a6b692b-0027-45de-a73e-1ff205c869c2")
-		(property "Reference" "R416"
+		(property "Reference" "R916"
 			(at 127 96.52 90)
 			(effects
 				(font
@@ -3734,7 +3734,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R416")
+					(reference "R916")
 					(unit 1)
 				)
 			)
@@ -3750,7 +3750,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9930b8e4-8aa6-406f-9a4d-eb8806094a64")
-		(property "Reference" "R412"
+		(property "Reference" "R912"
 			(at 127 80.01 90)
 			(effects
 				(font
@@ -3808,7 +3808,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R412")
+					(reference "R912")
 					(unit 1)
 				)
 			)
@@ -3824,7 +3824,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a32ecfe-e871-44d1-8e30-c1bfe157bc80")
-		(property "Reference" "D401"
+		(property "Reference" "D901"
 			(at 80.01 120.5798 0)
 			(effects
 				(font
@@ -3888,7 +3888,7 @@
 			)
 			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D401")
+					(reference "D901")
 					(unit 1)
 				)
 			)
@@ -3904,7 +3904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c85aafe-4bee-4468-90b7-0fb208643fca")
-		(property "Reference" "SW403"
+		(property "Reference" "SW903"
 			(at 86.36 40.64 0)
 			(effects
 				(font
@@ -3962,7 +3962,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW403")
+					(reference "SW903")
 					(unit 1)
 				)
 			)
@@ -3978,7 +3978,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9df284ae-a390-4393-9af8-fa981f733637")
-		(property "Reference" "SW401"
+		(property "Reference" "SW901"
 			(at 171.45 38.1 0)
 			(effects
 				(font
@@ -4036,7 +4036,7 @@
 			)
 			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW401")
+					(reference "SW901")
 					(unit 1)
 				)
 			)
@@ -4052,7 +4052,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a533a846-47ee-425d-bb40-9898aaa0db2d")
-		(property "Reference" "#PWR0401"
+		(property "Reference" "#PWR0901"
 			(at 180.34 52.07 0)
 			(effects
 				(font
@@ -4108,7 +4108,7 @@
 			)
 			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "#PWR0401")
+					(reference "#PWR0901")
 					(unit 1)
 				)
 			)
@@ -4124,7 +4124,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "afd277cf-9f0d-48c3-8700-8b8b8d53c5b1")
-		(property "Reference" "#PWR0402"
+		(property "Reference" "#PWR0902"
 			(at 234.95 53.34 0)
 			(effects
 				(font
@@ -4180,7 +4180,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "#PWR0402")
+					(reference "#PWR0902")
 					(unit 1)
 				)
 			)
@@ -4196,7 +4196,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b04384ee-1903-4ecc-9a26-ae9b4896b79b")
-		(property "Reference" "R410"
+		(property "Reference" "R910"
 			(at 93.98 80.01 90)
 			(effects
 				(font
@@ -4254,7 +4254,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R410")
+					(reference "R910")
 					(unit 1)
 				)
 			)
@@ -4270,7 +4270,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3cf592d-c84e-480a-b852-2a5696d66209")
-		(property "Reference" "SW411"
+		(property "Reference" "SW911"
 			(at 86.36 73.66 0)
 			(effects
 				(font
@@ -4328,7 +4328,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW411")
+					(reference "SW911")
 					(unit 1)
 				)
 			)
@@ -4344,7 +4344,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc32d076-46d8-4e3c-b12a-49b742ba3ffe")
-		(property "Reference" "SW415"
+		(property "Reference" "SW915"
 			(at 86.36 90.17 0)
 			(effects
 				(font
@@ -4402,7 +4402,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW415")
+					(reference "SW915")
 					(unit 1)
 				)
 			)
@@ -4418,7 +4418,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3097c9d-3744-49f9-b9be-c488911463a5")
-		(property "Reference" "SW416"
+		(property "Reference" "SW916"
 			(at 102.87 90.17 0)
 			(effects
 				(font
@@ -4476,7 +4476,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW416")
+					(reference "SW916")
 					(unit 1)
 				)
 			)
@@ -4492,7 +4492,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d512d4f6-9ef6-4207-bd65-5168a42caddc")
-		(property "Reference" "SW409"
+		(property "Reference" "SW909"
 			(at 119.38 57.15 0)
 			(effects
 				(font
@@ -4550,7 +4550,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW409")
+					(reference "SW909")
 					(unit 1)
 				)
 			)
@@ -4566,7 +4566,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d944da78-6396-4a32-8714-538a100bd5ae")
-		(property "Reference" "SW405"
+		(property "Reference" "SW905"
 			(at 119.38 40.64 0)
 			(effects
 				(font
@@ -4624,7 +4624,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW405")
+					(reference "SW905")
 					(unit 1)
 				)
 			)
@@ -4640,7 +4640,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc1d487e-6147-414f-adb5-9062664b15b2")
-		(property "Reference" "SW414"
+		(property "Reference" "SW914"
 			(at 68.58 90.17 0)
 			(effects
 				(font
@@ -4698,7 +4698,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW414")
+					(reference "SW914")
 					(unit 1)
 				)
 			)
@@ -4714,7 +4714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed0eb4b2-83f8-4c99-8faa-fec8bc32a872")
-		(property "Reference" "R407"
+		(property "Reference" "R907"
 			(at 110.49 63.5 90)
 			(effects
 				(font
@@ -4772,7 +4772,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R407")
+					(reference "R907")
 					(unit 1)
 				)
 			)
@@ -4788,7 +4788,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eff12c71-8e26-4ccf-80d2-67b3a03c1383")
-		(property "Reference" "SW408"
+		(property "Reference" "SW908"
 			(at 102.87 57.15 0)
 			(effects
 				(font
@@ -4846,7 +4846,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW408")
+					(reference "SW908")
 					(unit 1)
 				)
 			)
@@ -4862,7 +4862,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fdb0a9e8-aac8-4ddf-b986-d5197a12e8eb")
-		(property "Reference" "R415"
+		(property "Reference" "R915"
 			(at 110.49 96.52 90)
 			(effects
 				(font
@@ -4920,7 +4920,7 @@
 			)
 			(project "hmi_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R415")
+					(reference "R915")
 					(unit 1)
 				)
 			)
