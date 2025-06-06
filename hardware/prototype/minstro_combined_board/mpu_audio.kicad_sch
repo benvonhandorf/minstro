@@ -2643,7 +2643,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 27.94) (xy 252.73 27.94)
+			(xy 250.19 27.94) (xy 252.73 27.94)
 		)
 		(stroke
 			(width 0)
@@ -3342,7 +3342,7 @@
 		(uuid "36e455ff-6296-4965-b9d5-33e09a8f302a")
 	)
 	(label "R_HS_N"
-		(at 248.92 27.94 180)
+		(at 250.19 27.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3737,7 +3737,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 106.68 25.908 90)
 			(effects
 				(font
@@ -3959,7 +3959,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 234.95 27.94 0)
 			(effects
 				(font
@@ -4107,7 +4107,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 66.04 27.94 0)
 			(effects
 				(font
@@ -4181,7 +4181,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 63.5 69.85 0)
 			(effects
 				(font
@@ -4329,7 +4329,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Audio:SameSky_CMB-6544PF_Electret_Mic_9.4d"
 			(at 260.35 118.11 90)
 			(effects
 				(font
@@ -4405,7 +4405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 86.36 27.94 0)
 			(effects
 				(font
@@ -4553,7 +4553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 52.07 185.42 0)
 			(effects
 				(font
@@ -4706,7 +4706,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 50.8 81.28 0)
 			(effects
 				(font
@@ -4854,7 +4854,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 76.2 27.94 0)
 			(effects
 				(font
@@ -5148,7 +5148,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 238.76 22.86 0)
 			(effects
 				(font
@@ -5224,7 +5224,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Connectors_Misc:SJ-43515RS-SMT-TR"
 			(at 259.08 30.48 0)
 			(effects
 				(font
@@ -5309,7 +5309,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 30.48 168.91 0)
 			(effects
 				(font
@@ -5383,7 +5383,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 251.46 63.5 0)
 			(effects
 				(font
@@ -5673,7 +5673,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 57.15 60.96 0)
 			(effects
 				(font
@@ -5749,7 +5749,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 113.03 27.94 0)
 			(effects
 				(font
@@ -6060,7 +6060,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 53.34 76.2 0)
 			(effects
 				(font
@@ -6136,7 +6136,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 46.99 168.91 0)
 			(effects
 				(font

@@ -2920,7 +2920,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 93.98 68.58 0)
 			(effects
 				(font
@@ -3068,7 +3068,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 119.38 97.79 0)
 			(effects
 				(font
@@ -3142,7 +3142,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 68.58 81.28 0)
 			(effects
 				(font
@@ -3715,7 +3715,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 119.38 81.28 0)
 			(effects
 				(font
@@ -3789,7 +3789,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 52.07 0)
 			(effects
 				(font
@@ -3937,7 +3937,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 68.58 48.26 0)
 			(effects
 				(font
@@ -4159,7 +4159,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 76.2 85.09 0)
 			(effects
 				(font
@@ -4233,7 +4233,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 127 52.07 0)
 			(effects
 				(font
@@ -4307,7 +4307,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 76.2 68.58 0)
 			(effects
 				(font
@@ -4381,7 +4381,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 102.87 81.28 0)
 			(effects
 				(font
@@ -4455,7 +4455,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 85.09 0)
 			(effects
 				(font
@@ -4529,7 +4529,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 93.98 52.07 0)
 			(effects
 				(font
@@ -4815,7 +4815,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 76.2 52.07 0)
 			(effects
 				(font
@@ -4889,7 +4889,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 76.2 101.6 0)
 			(effects
 				(font
@@ -4963,7 +4963,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 68.58 64.77 0)
 			(effects
 				(font
@@ -5037,7 +5037,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 127 68.58 0)
 			(effects
 				(font
@@ -5259,7 +5259,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 102.87 48.26 0)
 			(effects
 				(font
@@ -5333,7 +5333,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 86.36 64.77 0)
 			(effects
 				(font
@@ -5407,7 +5407,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 93.98 101.6 0)
 			(effects
 				(font
@@ -5481,7 +5481,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 127 101.6 0)
 			(effects
 				(font
@@ -5769,7 +5769,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "R_4"
 			(at 127 82.55 90)
 			(effects
 				(font
@@ -5777,7 +5777,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 127 85.09 0)
 			(effects
 				(font
@@ -5931,7 +5931,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 86.36 48.26 0)
 			(effects
 				(font
@@ -6297,7 +6297,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 93.98 85.09 0)
 			(effects
 				(font
@@ -6371,7 +6371,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 86.36 81.28 0)
 			(effects
 				(font
@@ -6445,7 +6445,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 86.36 97.79 0)
 			(effects
 				(font
@@ -6519,7 +6519,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 102.87 97.79 0)
 			(effects
 				(font
@@ -6659,7 +6659,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 119.38 64.77 0)
 			(effects
 				(font
@@ -6733,7 +6733,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 119.38 48.26 0)
 			(effects
 				(font
@@ -6807,7 +6807,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 68.58 97.79 0)
 			(effects
 				(font
@@ -6947,7 +6947,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 68.58 0)
 			(effects
 				(font
@@ -7021,7 +7021,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
 			(at 102.87 64.77 0)
 			(effects
 				(font
@@ -7161,7 +7161,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 101.6 0)
 			(effects
 				(font
