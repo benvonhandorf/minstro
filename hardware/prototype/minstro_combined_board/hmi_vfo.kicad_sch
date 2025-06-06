@@ -114,7 +114,7 @@
 				)
 			)
 			(symbol "Rotary_Encoder_Dual_Axis_Switch_1_1"
-				(text "Inner\nEnc"
+				(text "Shaft\nEnc"
 					(at -0.254 -5.334 900)
 					(effects
 						(font
@@ -122,7 +122,7 @@
 						)
 					)
 				)
-				(text "Outer\nEnc"
+				(text "Sleve\nEnc"
 					(at 0 4.826 900)
 					(effects
 						(font
@@ -133,25 +133,6 @@
 				(pin input line
 					(at -12.7 2.54 0)
 					(length 5.08)
-					(name "SW1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 2.54 0)
-					(length 5.08)
-					(hide yes)
 					(name "SW1"
 						(effects
 							(font
@@ -760,9 +741,6 @@
 		(pin "5"
 			(uuid "72882a47-fd7a-48f9-9263-7c6b09f5a57c")
 		)
-		(pin "5"
-			(uuid "befda06b-a5fd-4150-8703-a328b37e6d7b")
-		)
 		(pin "1"
 			(uuid "5c86b1da-07da-4ab2-9506-19a85074ab67")
 		)
@@ -773,7 +751,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/0056968a-0c1d-4a8a-9224-b2ac4a6e25ff"
 					(reference "S1001")
 					(unit 1)
@@ -845,7 +823,7 @@
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/0056968a-0c1d-4a8a-9224-b2ac4a6e25ff"
 					(reference "#PWR01001")
 					(unit 1)
