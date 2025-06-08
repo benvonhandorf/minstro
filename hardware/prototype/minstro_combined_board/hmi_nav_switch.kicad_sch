@@ -1503,7 +1503,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x10"
+		(property "Value" "NAV CONN"
 			(at 96.52 62.23 0)
 			(effects
 				(font

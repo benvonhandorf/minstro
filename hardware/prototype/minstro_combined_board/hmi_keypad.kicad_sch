@@ -5,31 +5,35 @@
 	(uuid "12a66389-4b28-434f-af4a-e721a18749b0")
 	(paper "A4")
 	(lib_symbols
-		(symbol "BVH_LED:WS2182-Common"
+		(symbol "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED"
+			(pin_names
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 0 0 0)
+			(property "Reference" "S"
+				(at -6.096 7.62 0)
+				(do_not_autoplace)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "SINFO"
+				(at -5.842 -7.62 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-				(at 0.254 -12.954 0)
+			(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+				(at 0 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 					(hide yes)
 				)
@@ -38,7 +42,7 @@
 				(at 0 0 0)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 					(hide yes)
 				)
@@ -52,29 +56,134 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "ws2182 led smd"
+			(property "ki_locked" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(symbol "WS2182-Common_0_1"
-				(rectangle
-					(start -5.08 6.35)
-					(end 5.08 -6.35)
+			(symbol "Tac_Switch_With_Addressable_LED_1_1"
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
 					(stroke
 						(width 0)
-						(type default)
+						(type solid)
 					)
 					(fill
 						(type none)
 					)
 				)
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
-			(symbol "WS2182-Common_1_1"
+			(symbol "Tac_Switch_With_Addressable_LED_2_1"
+				(rectangle
+					(start -5.08 6.35)
+					(end 5.08 -6.35)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
 				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -133,131 +242,6 @@
 					(at 7.62 0 180)
 					(length 2.54)
 					(name "DO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Value" "R_Small"
-				(at 1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_Small_0_1"
-				(rectangle
-					(start -0.762 1.778)
-					(end 0.762 -1.778)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.762)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.762)
-					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -407,180 +391,6 @@
 				(pin passive line
 					(at 5.08 0 180)
 					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_Push_45deg"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 3.048 1.016 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push_45deg"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_45deg_0_1"
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.1684 1.1684)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.508 2.54) (xy 2.54 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 1.016) (xy 2.032 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.143 -1.1938)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -2.54 2.54 0)
-					(length 0)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -2.54 180)
-					(length 0)
 					(name "2"
 						(effects
 							(font
@@ -859,100 +669,28 @@
 		(uuid "df61a262-f8f1-46f9-86d4-619ebed187a3")
 	)
 	(junction
-		(at 78.74 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "02915b36-2e6e-485b-bd8f-526126ab679a")
-	)
-	(junction
-		(at 246.38 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0884a538-0c47-4744-bcf4-02b0bf18fca5")
-	)
-	(junction
-		(at 228.6 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e2a5739-920e-4c9d-bd12-a4401150d955")
-	)
-	(junction
-		(at 83.82 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1021ab96-c1ae-4c66-bf2b-6f8fc27a15dc")
-	)
-	(junction
 		(at 154.94 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "113e99ee-178c-44ac-ac22-cdcc1416e4d3")
 	)
 	(junction
-		(at 96.52 68.58)
+		(at 83.82 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "11a2a33b-fa75-4593-ab71-c2ba0dbdfc9e")
-	)
-	(junction
-		(at 66.04 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "11b53596-5c15-4e7e-9591-67cd7b175ac3")
-	)
-	(junction
-		(at 100.33 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "12cc5d4a-f426-421a-a17d-4e515896ac78")
-	)
-	(junction
-		(at 210.82 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1c731b52-fba8-4775-96d0-125e144920a5")
+		(uuid "19e65aeb-b501-443b-a575-15890605f726")
 	)
 	(junction
 		(at 210.82 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "23f46c6e-f824-4d6b-9db7-48156c7fa96e")
-	)
-	(junction
-		(at 228.6 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2bb2a05c-8191-40e2-88a1-003d51d4393b")
-	)
-	(junction
-		(at 210.82 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2f6e4280-4eb3-4c31-9e5d-8e0a950bf49e")
+		(uuid "3259f7f3-cda7-4723-a225-8cad0f9e1d35")
 	)
 	(junction
 		(at 210.82 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "34feb140-f2fc-47b7-b0cd-e4d165d8ed60")
-	)
-	(junction
-		(at 210.82 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "36af31d4-9160-4d05-b7c1-e323bf344952")
-	)
-	(junction
-		(at 113.03 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "38e65bb7-4ea3-4dfd-a667-3cbdef632f0c")
-	)
-	(junction
-		(at 210.82 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3f3de84c-8405-4278-9f86-8b2f787b0b20")
+		(uuid "385a5850-9ba0-4a97-bcc1-60ba09ef63d3")
 	)
 	(junction
 		(at 154.94 31.75)
@@ -961,28 +699,16 @@
 		(uuid "4346bd2c-b6d8-420a-8277-38c33a477c63")
 	)
 	(junction
-		(at 83.82 78.74)
+		(at 113.03 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4a5d6e8b-9f1f-4096-97e2-e00b244fd10d")
+		(uuid "4f6c42dd-32de-4200-b158-c43ae3e4f2db")
 	)
 	(junction
-		(at 246.38 128.27)
+		(at 100.33 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "573c943e-a585-4c72-9cb4-7e9a71dd0a16")
-	)
-	(junction
-		(at 96.52 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5adabe60-9c85-48b0-9e54-6187a5fc61de")
-	)
-	(junction
-		(at 113.03 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5da0d135-3a99-4372-8966-d0b143b1d2a9")
+		(uuid "5aac0889-2ce4-45c4-a740-fb411713ff3a")
 	)
 	(junction
 		(at 154.94 27.94)
@@ -991,182 +717,188 @@
 		(uuid "611106c9-f755-4360-9547-b7228de5f1f2")
 	)
 	(junction
-		(at 246.38 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7305d3dc-d8e3-4872-acd0-bf3ce654d438")
-	)
-	(junction
-		(at 246.38 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7458e22b-d9fd-4e93-a74c-370935c2e6ee")
-	)
-	(junction
-		(at 66.04 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7651bdba-fb2b-4964-860d-960e621feb75")
-	)
-	(junction
-		(at 246.38 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "78e42d01-9892-4870-a76b-347803b3c0e0")
-	)
-	(junction
 		(at 78.74 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7934869b-b251-4ca1-bf39-ed0a32ccd829")
-	)
-	(junction
-		(at 210.82 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "793f86a3-5585-4b36-88e6-e507b832a167")
+		(uuid "729c9be6-13e3-419d-8ef9-badab56aafec")
 	)
 	(junction
 		(at 228.6 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7967d4f0-e9c6-4133-9776-b54f76efb78b")
-	)
-	(junction
-		(at 66.04 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7c888251-c176-41a8-b09e-07a860d67131")
-	)
-	(junction
-		(at 228.6 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7d768058-733a-4f9a-8912-a684c50028af")
-	)
-	(junction
-		(at 83.82 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b56f4a8-ca2b-493c-881f-b18cea1a43fb")
-	)
-	(junction
-		(at 210.82 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90067354-9ec4-400d-92a1-b52671bb5d71")
-	)
-	(junction
-		(at 129.54 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9374b1d2-e5a1-4af9-a4c9-1ac42097645f")
-	)
-	(junction
-		(at 228.6 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "952755b2-de1a-4774-9fd9-3e6e82190879")
-	)
-	(junction
-		(at 228.6 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9d37a3f6-96d1-4f05-a48f-384372b8e561")
-	)
-	(junction
-		(at 113.03 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a0c20b37-dd44-476a-aa68-b6e5cfb26c69")
-	)
-	(junction
-		(at 78.74 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a3110d22-8607-4a03-bd05-151846b4d1c9")
-	)
-	(junction
-		(at 83.82 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a8cd50e2-3283-4401-b432-6f4ac475a923")
-	)
-	(junction
-		(at 66.04 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a926924a-a74d-48bc-8ee4-54395fda6d1f")
-	)
-	(junction
-		(at 246.38 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "acd1050d-3380-4538-81e5-539e5fc2b8a6")
-	)
-	(junction
-		(at 246.38 59.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad8edcf2-c01e-4365-9d2d-bcd849c3db30")
-	)
-	(junction
-		(at 228.6 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "af01be48-2fc5-4637-9853-c2b552701f65")
-	)
-	(junction
-		(at 129.54 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b895af66-0bbc-4774-9b69-41b06d21965a")
-	)
-	(junction
-		(at 100.33 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bd172a81-c03b-4190-91fd-5441946b43b7")
-	)
-	(junction
-		(at 96.52 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d083aae7-da74-421b-9bac-d50c49d6bf80")
-	)
-	(junction
-		(at 100.33 78.74)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d92d4c66-5733-423d-b171-a6ed3498ac89")
-	)
-	(junction
-		(at 100.33 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc8431ee-de71-450a-beb7-0f9f130cd6bc")
-	)
-	(junction
-		(at 129.54 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eb45280f-324b-43c1-8af1-6a70c32226ab")
-	)
-	(junction
-		(at 246.38 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f423e5d6-45cf-4d6c-bb1a-fa5bee5832d5")
+		(uuid "854fdb49-291c-4764-a09a-5470e0d08a39")
 	)
 	(junction
 		(at 228.6 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f89969f2-0a9a-4f34-b104-7cae6c9b7c70")
+		(uuid "86739f2a-328e-45d4-9640-414a66e1feef")
+	)
+	(junction
+		(at 66.04 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89d20d2f-171a-42a1-ba91-00f6c792fb7b")
+	)
+	(junction
+		(at 66.04 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "937f15dd-894c-47d7-952e-a7a71165f9ec")
+	)
+	(junction
+		(at 228.6 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94fcbb9a-102a-43c8-9d04-cb164c8df085")
+	)
+	(junction
+		(at 210.82 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "975ad113-2bbf-40ea-abd0-4155a1d649f0")
+	)
+	(junction
+		(at 210.82 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9999199d-37d3-4edc-9764-1edbcc8e10ec")
+	)
+	(junction
+		(at 129.54 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99e54235-2f1c-4197-a70a-2e839816fd6b")
+	)
+	(junction
+		(at 96.52 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a555bc44-4337-4196-92f5-d0015f660174")
+	)
+	(junction
+		(at 246.38 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aeaa6dfb-4b6e-40ac-9bdd-e98474842c55")
+	)
+	(junction
+		(at 66.04 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2740c30-2e59-4d55-97e8-090c031bb164")
+	)
+	(junction
+		(at 228.6 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b3c347a5-47d2-4a1a-a3fd-88f4ce492d56")
+	)
+	(junction
+		(at 96.52 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf8c91bb-0cd4-47d5-9d80-a2aae3cc1dc8")
+	)
+	(junction
+		(at 83.82 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8a250d4-c379-4c00-bace-e03f5032035d")
+	)
+	(junction
+		(at 129.54 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca83d0af-345b-4f52-83bc-a35fa62f8e70")
+	)
+	(junction
+		(at 246.38 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc9d313b-05b3-4ffa-8e33-3d37a9e1414e")
+	)
+	(junction
+		(at 113.03 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd191662-d105-40ad-adef-44976628530a")
+	)
+	(junction
+		(at 78.74 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3ad2601-11a9-4bec-84f2-b4b620f6037c")
+	)
+	(junction
+		(at 228.6 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc22a472-fe2b-4133-9658-2dbcdf5b5d59")
+	)
+	(junction
+		(at 210.82 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de687d4f-fd64-426a-9c05-c9096b05378b")
+	)
+	(junction
+		(at 246.38 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df5db78a-0731-4b12-8436-fffb9fd63ed1")
+	)
+	(junction
+		(at 246.38 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1736447-1bbb-4a1d-b1e5-b06564310c49")
+	)
+	(junction
+		(at 83.82 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6b650c5-0ed2-4503-97a1-d656a7a551ab")
+	)
+	(junction
+		(at 100.33 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebc0eabe-352d-4d3f-8948-497bb993cc84")
+	)
+	(junction
+		(at 228.6 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1be13e2-a565-48cf-b206-29f3af6c0270")
+	)
+	(junction
+		(at 100.33 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f636b7c0-d634-4a3f-8e9b-53b8d4789950")
+	)
+	(junction
+		(at 246.38 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f70bc464-5a85-4a89-a65b-1ec3fef534d9")
+	)
+	(junction
+		(at 210.82 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f72356e9-5e04-4e43-8773-16a79a118757")
+	)
+	(junction
+		(at 246.38 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff612627-5c38-45fb-8b66-160c84849638")
 	)
 	(no_connect
-		(at 254 144.78)
-		(uuid "79f5efdc-81cd-4575-b5f8-edd95553aab7")
+		(at 254 119.38)
+		(uuid "eff3aca8-18a7-4ce8-8afc-896de9de325b")
 	)
 	(wire
 		(pts
@@ -1180,33 +912,13 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 100.33) (xy 88.9 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05272db2-f0a0-49f8-8713-2bf22dc1fa02")
-	)
-	(wire
-		(pts
-			(xy 228.6 128.27) (xy 246.38 128.27)
+			(xy 193.04 128.27) (xy 210.82 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0622285d-870d-4495-9a76-70a8afb9f44d")
-	)
-	(wire
-		(pts
-			(xy 257.81 119.38) (xy 254 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "086bd30b-68b5-465b-bfa6-55312709d1fc")
 	)
 	(wire
 		(pts
@@ -1230,26 +942,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 128.27) (xy 193.04 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10b833df-48ba-41ec-9236-813f6e785747")
-	)
-	(wire
-		(pts
-			(xy 193.04 135.89) (xy 210.82 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10d645f0-11b0-4391-8b6b-a0e19efdd835")
-	)
-	(wire
-		(pts
 			(xy 200.66 93.98) (xy 203.2 93.98)
 		)
 		(stroke
@@ -1260,17 +952,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 135.89) (xy 246.38 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12e434a2-e02c-47f2-a9a8-0b7ee62dd0e7")
-	)
-	(wire
-		(pts
-			(xy 102.87 139.7) (xy 106.68 139.7)
+			(xy 99.06 182.88) (xy 102.87 182.88)
 		)
 		(stroke
 			(width 0)
@@ -1300,16 +982,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 68.58) (xy 129.54 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a4dda33-96fa-4b0b-9f8c-329c8aa3fba3")
-	)
-	(wire
-		(pts
 			(xy 106.68 52.07) (xy 106.68 50.8)
 		)
 		(stroke
@@ -1320,33 +992,53 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 77.47) (xy 228.6 77.47)
+			(xy 96.52 68.58) (xy 96.52 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b24abf8-d72a-4d3c-903e-c0d57ddba07c")
+		(uuid "1f5c33e8-e01e-48fd-a066-a9e5a99160aa")
 	)
 	(wire
 		(pts
-			(xy 210.82 153.67) (xy 193.04 153.67)
+			(xy 83.82 78.74) (xy 100.33 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1be96606-dcab-4424-b3d0-1a3872525477")
+		(uuid "1f6ac0e2-a8da-49b9-8e15-28782ffdae40")
 	)
 	(wire
 		(pts
-			(xy 236.22 144.78) (xy 238.76 144.78)
+			(xy 246.38 59.69) (xy 264.16 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "28f15d90-0c44-4e0a-bf1a-5bdf9b12f108")
+		(uuid "251f24a9-2663-4919-b527-9d7844415f37")
+	)
+	(wire
+		(pts
+			(xy 210.82 59.69) (xy 228.6 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2842bf76-ddf3-4576-9fa7-c4377d6dc6df")
+	)
+	(wire
+		(pts
+			(xy 246.38 102.87) (xy 276.86 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2944072d-0eb6-4aa7-b50b-f4a1becb3425")
 	)
 	(wire
 		(pts
@@ -1380,7 +1072,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 68.58) (xy 113.03 85.09)
+			(xy 113.03 34.29) (xy 113.03 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1390,23 +1082,13 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 156.21) (xy 275.59 153.67)
+			(xy 83.82 45.72) (xy 100.33 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2d5366f4-dc16-471d-9ba8-cb0bae192840")
-	)
-	(wire
-		(pts
-			(xy 129.54 85.09) (xy 129.54 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e0567ea-6fed-4a87-9ba1-1229726c4b53")
+		(uuid "2f315e87-6eea-4a8b-aef2-020a6756baca")
 	)
 	(wire
 		(pts
@@ -1420,6 +1102,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 128.27) (xy 228.6 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3438f1c6-60fe-4c50-9839-72da778c1c73")
+	)
+	(wire
+		(pts
 			(xy 193.04 85.09) (xy 210.82 85.09)
 		)
 		(stroke
@@ -1427,16 +1119,6 @@
 			(type default)
 		)
 		(uuid "34e5c74a-57fd-497d-889b-39401d1607c0")
-	)
-	(wire
-		(pts
-			(xy 78.74 85.09) (xy 78.74 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35569c71-6b9c-4ffc-8e2a-6a640beeb20a")
 	)
 	(wire
 		(pts
@@ -1450,27 +1132,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 128.27) (xy 210.82 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bbf7f22-f0f4-42a4-8e3e-df2e23a24dc3")
-	)
-	(wire
-		(pts
-			(xy 275.59 77.47) (xy 246.38 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f54813c-2b3f-4b53-82a6-52512b2c37f2")
-	)
-	(wire
-		(pts
-			(xy 106.68 85.09) (xy 107.95 85.09)
+			(xy 106.68 85.09) (xy 113.03 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1480,43 +1142,13 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 134.62) (xy 264.16 135.89)
+			(xy 78.74 52.07) (xy 78.74 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "40c76cfb-5ed6-42a7-9185-47d33a799a11")
-	)
-	(wire
-		(pts
-			(xy 106.68 100.33) (xy 105.41 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42caaa9d-a9fb-4a63-bf70-805acec657ac")
-	)
-	(wire
-		(pts
-			(xy 246.38 110.49) (xy 264.16 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4366dda4-ed22-47b8-b465-edfe556ce7b7")
-	)
-	(wire
-		(pts
-			(xy 123.19 101.6) (xy 123.19 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46693003-6d77-464c-add0-084173b6de2c")
+		(uuid "456e7c10-6d62-4e58-8825-81700d7410b0")
 	)
 	(wire
 		(pts
@@ -1530,27 +1162,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 101.6) (xy 72.39 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48b8e779-424b-493a-9b68-001b2a91d494")
-	)
-	(wire
-		(pts
-			(xy 246.38 102.87) (xy 228.6 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a53edea-a624-4d2a-a540-67b798c549e0")
-	)
-	(wire
-		(pts
-			(xy 123.19 52.07) (xy 124.46 52.07)
+			(xy 123.19 52.07) (xy 129.54 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1560,7 +1172,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 68.58) (xy 124.46 68.58)
+			(xy 123.19 68.58) (xy 129.54 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1580,43 +1192,23 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 85.09) (xy 113.03 101.6)
+			(xy 100.33 45.72) (xy 116.84 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4ce2ce75-ea3d-4612-8711-41f6b9047c29")
+		(uuid "4de36010-3a7e-47f3-82a5-120bcba1c2dd")
 	)
 	(wire
 		(pts
-			(xy 96.52 85.09) (xy 96.52 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d25742f-da8a-481b-a318-5e8e4f10b18f")
-	)
-	(wire
-		(pts
-			(xy 210.82 102.87) (xy 193.04 102.87)
+			(xy 193.04 102.87) (xy 210.82 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4e75e8a6-4283-4095-998a-610a220a536b")
-	)
-	(wire
-		(pts
-			(xy 210.82 59.69) (xy 193.04 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ff8700c-6570-4e21-bebe-565e16aa6cd6")
 	)
 	(wire
 		(pts
@@ -1630,16 +1222,6 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 59.69) (xy 246.38 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "555e56c9-0455-41f0-aca2-928fc6cebf21")
-	)
-	(wire
-		(pts
 			(xy 106.68 68.58) (xy 106.68 67.31)
 		)
 		(stroke
@@ -1650,27 +1232,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 110.49) (xy 246.38 110.49)
+			(xy 100.33 62.23) (xy 116.84 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56d5b5f8-6596-4ca9-a1a9-1821da2eed8d")
+		(uuid "591e9e2f-8cf7-495a-9f5c-23abd022162d")
 	)
 	(wire
 		(pts
-			(xy 96.52 52.07) (xy 96.52 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "599f5bba-280b-4484-b416-060645761763")
-	)
-	(wire
-		(pts
-			(xy 228.6 77.47) (xy 210.82 77.47)
+			(xy 193.04 77.47) (xy 210.82 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1680,7 +1252,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 62.23) (xy 100.33 62.23)
+			(xy 57.15 62.23) (xy 66.04 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1690,23 +1262,13 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 110.49) (xy 228.6 110.49)
+			(xy 193.04 110.49) (xy 210.82 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5cde1de6-2920-494e-a28e-7b05c354ec9d")
-	)
-	(wire
-		(pts
-			(xy 78.74 68.58) (xy 78.74 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ce35e35-ef36-4634-97e3-01d9e05f1f26")
 	)
 	(wire
 		(pts
@@ -1720,43 +1282,13 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 153.67) (xy 210.82 153.67)
+			(xy 100.33 78.74) (xy 116.84 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "64975d1a-0fc6-461a-863f-a53940175d0b")
-	)
-	(wire
-		(pts
-			(xy 57.15 62.23) (xy 66.04 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "652fa769-a707-444d-89d2-ac2de1b5145a")
-	)
-	(wire
-		(pts
-			(xy 113.03 34.29) (xy 113.03 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "654da071-ccda-44a2-ac04-5fe9595eb366")
-	)
-	(wire
-		(pts
-			(xy 210.82 85.09) (xy 228.6 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6641954e-8793-4063-870e-f65beacf8ebe")
+		(uuid "6961f1a6-d2c8-433f-b70e-5f9ab82abf44")
 	)
 	(wire
 		(pts
@@ -1767,16 +1299,6 @@
 			(type default)
 		)
 		(uuid "6a03aeb0-0214-420f-a57c-80717741d008")
-	)
-	(wire
-		(pts
-			(xy 182.88 144.78) (xy 182.88 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d087660-1f7a-4066-b6df-6fda2265e538")
 	)
 	(wire
 		(pts
@@ -1810,13 +1332,13 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 52.07) (xy 113.03 68.58)
+			(xy 113.03 68.58) (xy 113.03 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f173f71-4b0d-4395-a46b-45ee63ec3a3c")
+		(uuid "6e564e3a-59bd-48b2-aaa6-3a390de62ebc")
 	)
 	(wire
 		(pts
@@ -1830,33 +1352,13 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 34.29) (xy 129.54 52.07)
+			(xy 246.38 128.27) (xy 275.59 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "720696b2-263d-4cc6-a004-788e248e5f2c")
-	)
-	(wire
-		(pts
-			(xy 100.33 78.74) (xy 116.84 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73fdc07a-cb84-4dcb-a495-daea3dda7330")
-	)
-	(wire
-		(pts
-			(xy 193.04 110.49) (xy 210.82 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75edb86a-aa22-47d0-9404-6a3386bd02f2")
+		(uuid "721ba05e-41da-4eeb-b921-fd59950ca1e0")
 	)
 	(wire
 		(pts
@@ -1880,23 +1382,23 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 68.58) (xy 73.66 68.58)
+			(xy 113.03 52.07) (xy 113.03 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "780723c0-cf89-4503-8d36-a855bf161397")
+	)
+	(wire
+		(pts
+			(xy 72.39 68.58) (xy 78.74 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "788e26dc-1422-4e47-ba39-6a54c47ea3b7")
-	)
-	(wire
-		(pts
-			(xy 228.6 102.87) (xy 210.82 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c3552ea-b3c1-4703-8d7d-650cb0dc6746")
 	)
 	(wire
 		(pts
@@ -1910,13 +1412,13 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 144.78) (xy 182.88 144.78)
+			(xy 246.38 110.49) (xy 264.16 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7f3a3520-cd36-4646-85fd-09ccde9509c9")
+		(uuid "7f713d65-fc65-4577-a09b-9592a0cead9b")
 	)
 	(wire
 		(pts
@@ -1930,7 +1432,17 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 85.09) (xy 124.46 85.09)
+			(xy 210.82 102.87) (xy 228.6 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8634e0e7-ccc3-493f-b9bc-0058132cf96e")
+	)
+	(wire
+		(pts
+			(xy 123.19 85.09) (xy 129.54 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1950,13 +1462,13 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 132.08) (xy 257.81 132.08)
+			(xy 228.6 102.87) (xy 246.38 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "882c4d51-fa88-47f3-abfe-19844aa72c9a")
+		(uuid "897539c4-5cfe-4aef-a566-7c46bf07f130")
 	)
 	(wire
 		(pts
@@ -1970,7 +1482,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 52.07) (xy 107.95 52.07)
+			(xy 106.68 52.07) (xy 113.03 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1987,26 +1499,6 @@
 			(type default)
 		)
 		(uuid "8c1002e1-4d71-43c8-a379-818d4484a86b")
-	)
-	(wire
-		(pts
-			(xy 200.66 144.78) (xy 203.2 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c454157-8384-40af-821a-6b72ff9079f6")
-	)
-	(wire
-		(pts
-			(xy 100.33 45.72) (xy 116.84 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c98f5a7-235b-4b22-9513-478ce0b5f406")
 	)
 	(wire
 		(pts
@@ -2030,23 +1522,13 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 68.58) (xy 107.95 68.58)
+			(xy 106.68 68.58) (xy 113.03 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8ef07c2a-6b52-4431-9699-372754d931c9")
-	)
-	(wire
-		(pts
-			(xy 90.17 101.6) (xy 90.17 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ff8cd5f-5fdd-4b07-a463-ce826f1d2ae6")
 	)
 	(wire
 		(pts
@@ -2110,7 +1592,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 45.72) (xy 100.33 45.72)
+			(xy 66.04 45.72) (xy 83.82 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2130,13 +1612,13 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 78.74) (xy 100.33 78.74)
+			(xy 96.52 52.07) (xy 96.52 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "99790936-57b4-492e-9e8b-89615fc1872c")
+		(uuid "9b7ddb79-438b-4684-861c-6d5d7de6a473")
 	)
 	(wire
 		(pts
@@ -2150,37 +1632,17 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 132.08) (xy 257.81 119.38)
+			(xy 246.38 77.47) (xy 275.59 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9e07d9bb-8bef-4484-87ed-459515c06e61")
+		(uuid "a3a389db-f2e1-4dc9-98f0-dc1572f630f0")
 	)
 	(wire
 		(pts
-			(xy 275.59 153.67) (xy 246.38 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1e41a71-779d-4643-bc67-f8297128d173")
-	)
-	(wire
-		(pts
-			(xy 106.68 101.6) (xy 107.95 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3441662-26b3-4eb4-aeb0-8a526970c7f4")
-	)
-	(wire
-		(pts
-			(xy 129.54 52.07) (xy 129.54 68.58)
+			(xy 129.54 34.29) (xy 129.54 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2200,13 +1662,13 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 45.72) (xy 83.82 45.72)
+			(xy 228.6 77.47) (xy 246.38 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a89d315f-8657-4d6f-98a6-4bd192a6f36b")
+		(uuid "a6eb80ce-50fb-4d12-86a4-8e1e056f3dfb")
 	)
 	(wire
 		(pts
@@ -2220,16 +1682,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 100.33) (xy 121.92 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1d1812f-3694-44cb-bf6c-f2c093201047")
-	)
-	(wire
-		(pts
 			(xy 236.22 68.58) (xy 238.76 68.58)
 		)
 		(stroke
@@ -2237,16 +1689,6 @@
 			(type default)
 		)
 		(uuid "b2c12918-c30b-4b0a-97c4-e09ab4659c10")
-	)
-	(wire
-		(pts
-			(xy 78.74 52.07) (xy 78.74 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b35e63b3-3778-4a10-8253-b4f83761ce7e")
 	)
 	(wire
 		(pts
@@ -2260,16 +1702,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 153.67) (xy 228.6 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b60af9fc-7ce4-4344-8c0c-f90706a320a3")
-	)
-	(wire
-		(pts
 			(xy 179.07 68.58) (xy 185.42 68.58)
 		)
 		(stroke
@@ -2280,33 +1712,23 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 62.23) (xy 83.82 62.23)
+			(xy 210.82 85.09) (xy 228.6 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b6c363d6-21c8-4218-a9ee-58da0b4c4872")
+		(uuid "b6977656-dd2a-4a40-ba64-7152e4997624")
 	)
 	(wire
 		(pts
-			(xy 83.82 95.25) (xy 100.33 95.25)
+			(xy 129.54 68.58) (xy 129.54 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b7989b9b-5998-41cb-9bc8-08eeca2757a3")
-	)
-	(wire
-		(pts
-			(xy 210.82 77.47) (xy 193.04 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b916149f-da65-492b-b124-1f0b3ddb731b")
+		(uuid "b7ec99e4-d0a9-450b-af69-d4be3b28c129")
 	)
 	(wire
 		(pts
@@ -2320,7 +1742,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 52.07) (xy 73.66 52.07)
+			(xy 72.39 52.07) (xy 78.74 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2340,6 +1762,16 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 52.07) (xy 129.54 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0c05b33-552e-4c20-bd00-97eb4e0e76f1")
+	)
+	(wire
+		(pts
 			(xy 123.19 85.09) (xy 123.19 83.82)
 		)
 		(stroke
@@ -2350,7 +1782,17 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 59.69) (xy 228.6 59.69)
+			(xy 246.38 85.09) (xy 264.16 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3a4aef5-da8e-442d-a5b8-ef801070d0bb")
+	)
+	(wire
+		(pts
+			(xy 193.04 59.69) (xy 210.82 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2360,33 +1802,23 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 85.09) (xy 91.44 85.09)
+			(xy 228.6 110.49) (xy 246.38 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5c6e434-4fdd-4b6d-90df-d9ec41ce2550")
+	)
+	(wire
+		(pts
+			(xy 90.17 85.09) (xy 96.52 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c7982ebd-fbcc-4626-bba7-cd43a2d4a4d8")
-	)
-	(wire
-		(pts
-			(xy 228.6 59.69) (xy 210.82 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c90ac0af-5194-4b2f-a683-fc7d7045cbf9")
-	)
-	(wire
-		(pts
-			(xy 246.38 135.89) (xy 264.16 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c96dc36e-897a-4307-9dea-d3925c097966")
 	)
 	(wire
 		(pts
@@ -2397,56 +1829,6 @@
 			(type default)
 		)
 		(uuid "ca1de8bb-c595-4238-b4ce-608f9ed4d0d4")
-	)
-	(wire
-		(pts
-			(xy 276.86 102.87) (xy 246.38 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca5000ce-559b-4fa7-92cf-4aeaaf5c7164")
-	)
-	(wire
-		(pts
-			(xy 228.6 85.09) (xy 246.38 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbdb04a5-9e76-4758-b887-896c3bf0f442")
-	)
-	(wire
-		(pts
-			(xy 106.68 101.6) (xy 106.68 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd92de85-8518-41f4-a70a-7ba221da20b6")
-	)
-	(wire
-		(pts
-			(xy 100.33 95.25) (xy 116.84 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf2654fe-2c87-4e7f-8be4-0fa42316474f")
-	)
-	(wire
-		(pts
-			(xy 90.17 101.6) (xy 91.44 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cfd2a265-ecc1-47b6-96bc-3b96e903ce10")
 	)
 	(wire
 		(pts
@@ -2480,7 +1862,17 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 85.09) (xy 73.66 85.09)
+			(xy 66.04 62.23) (xy 83.82 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d261817d-7ef1-408f-87ab-eb2246fa934e")
+	)
+	(wire
+		(pts
+			(xy 72.39 85.09) (xy 78.74 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2490,33 +1882,23 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 95.25) (xy 83.82 95.25)
+			(xy 228.6 128.27) (xy 246.38 128.27)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d5da17ec-980d-4cdd-8ba9-ea378ac21bae")
+		(uuid "d5ad6935-178e-40e8-a8d9-2502f7d91e9c")
 	)
 	(wire
 		(pts
-			(xy 100.33 62.23) (xy 116.84 62.23)
+			(xy 210.82 110.49) (xy 228.6 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d6b4dbe3-4737-4c31-b74c-f64dcb070fe0")
-	)
-	(wire
-		(pts
-			(xy 246.38 128.27) (xy 275.59 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8a6fb15-6f58-44df-a91d-6c0116c3a50d")
+		(uuid "d5c785de-f401-4526-94aa-25be92c52a76")
 	)
 	(wire
 		(pts
@@ -2540,33 +1922,23 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 68.58) (xy 91.44 68.58)
+			(xy 66.04 78.74) (xy 83.82 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e129f85b-961f-4a84-9ee2-bf683bd03cf0")
+	)
+	(wire
+		(pts
+			(xy 90.17 68.58) (xy 96.52 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e3b06659-88df-403e-8d92-7b351052f139")
-	)
-	(wire
-		(pts
-			(xy 246.38 85.09) (xy 264.16 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e49559cd-40e5-45f6-a771-18ac89bc6e16")
-	)
-	(wire
-		(pts
-			(xy 123.19 101.6) (xy 124.46 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e65dce78-0a10-453c-9f99-247d90c4b135")
 	)
 	(wire
 		(pts
@@ -2580,27 +1952,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 101.6) (xy 73.66 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb2f8d83-3be6-4a19-97fe-b57080367651")
-	)
-	(wire
-		(pts
-			(xy 57.15 95.25) (xy 66.04 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb60ba36-42a1-41ac-9e70-94f8ccbd273a")
-	)
-	(wire
-		(pts
-			(xy 88.9 139.7) (xy 92.71 139.7)
+			(xy 85.09 182.88) (xy 88.9 182.88)
 		)
 		(stroke
 			(width 0)
@@ -2610,7 +1962,17 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 68.58) (xy 96.52 85.09)
+			(xy 210.82 77.47) (xy 228.6 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec32e62e-ef09-41a3-953c-85108d9293c4")
+	)
+	(wire
+		(pts
+			(xy 96.52 34.29) (xy 96.52 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2620,13 +1982,13 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 144.78) (xy 220.98 144.78)
+			(xy 83.82 62.23) (xy 100.33 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ec6ead66-b3e7-4828-bc8a-86872f59422e")
+		(uuid "ede7b0bc-27db-4ae2-bac9-c94bfe8c150b")
 	)
 	(wire
 		(pts
@@ -2637,6 +1999,26 @@
 			(type default)
 		)
 		(uuid "ee6e587f-30b7-47be-9d87-07cdbf29ca74")
+	)
+	(wire
+		(pts
+			(xy 228.6 59.69) (xy 246.38 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02d445c-7898-426f-abfd-6b1db436a279")
+	)
+	(wire
+		(pts
+			(xy 228.6 85.09) (xy 246.38 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f31cf35f-7526-431a-88e0-e8977a6cc3c1")
 	)
 	(wire
 		(pts
@@ -2680,16 +2062,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 34.29) (xy 96.52 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f70acae8-7497-4499-a3f8-cae27afe2cee")
-	)
-	(wire
-		(pts
 			(xy 57.15 45.72) (xy 66.04 45.72)
 		)
 		(stroke
@@ -2700,7 +2072,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 52.07) (xy 91.44 52.07)
+			(xy 90.17 52.07) (xy 96.52 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2710,13 +2082,13 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 78.74) (xy 83.82 78.74)
+			(xy 78.74 68.58) (xy 78.74 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fbb2429b-905d-4212-bc5d-d2a7ece1d9f5")
+		(uuid "fc770202-8b96-48cc-a841-57204dbc6b45")
 	)
 	(wire
 		(pts
@@ -2727,26 +2099,6 @@
 			(type default)
 		)
 		(uuid "fd2d61b4-14ef-4704-b311-56653ecf3736")
-	)
-	(wire
-		(pts
-			(xy 72.39 100.33) (xy 71.12 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdd1b108-8c56-4563-8934-a2abacc84401")
-	)
-	(wire
-		(pts
-			(xy 210.82 135.89) (xy 228.6 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fde68bb0-acfa-4807-9b52-cb76afcb073c")
 	)
 	(label "COL_3L"
 		(at 148.59 27.94 180)
@@ -2850,17 +2202,6 @@
 		)
 		(uuid "180d0711-7c05-400a-8db4-e67654ad70dc")
 	)
-	(hierarchical_label "ROW_D"
-		(shape input)
-		(at 57.15 95.25 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4b102b96-6ede-4b36-9079-a1eda8ee06d2")
-	)
 	(hierarchical_label "ROW_B"
 		(shape input)
 		(at 57.15 62.23 180)
@@ -2885,7 +2226,7 @@
 	)
 	(hierarchical_label "POW_SW"
 		(shape input)
-		(at 88.9 139.7 180)
+		(at 85.09 182.88 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2895,125 +2236,51 @@
 		(uuid "ba621ac9-c663-4153-a40f-e8dff7f8eb92")
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 93.98 68.58 90)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 86.36 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00e55f03-e2b5-4123-8f0e-18728a633aac")
-		(property "Reference" "R906"
-			(at 93.98 63.5 90)
+		(uuid "0c62628b-71f4-496d-ad7b-596a10eaf2f0")
+		(property "Reference" "S906"
+			(at 86.36 57.15 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "R_2"
-			(at 93.98 66.04 90)
+		(property "Value" "B2"
+			(at 86.36 59.69 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 93.98 68.58 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 86.36 64.77 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 93.98 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "835e21a8-3090-4921-a74e-8244971af210")
-		)
-		(pin "1"
-			(uuid "0e87ed74-3e4a-44cb-bc6c-292a6eb01d1b")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R406")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R906")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 210.82 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "039ce10d-7a7c-4945-8e1c-5cfe150bd309")
-		(property "Reference" "D914"
-			(at 219.71 139.6298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 219.71 141.5349 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 211.074 157.734 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 144.78 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 210.82 144.78 0)
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3021,212 +2288,78 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "7a6b20ca-9f48-4f12-8059-108a94527612")
-		)
 		(pin "2"
-			(uuid "222690c5-f255-442e-9b4f-3fdd07aaa97a")
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c5b")
 		)
 		(pin "4"
-			(uuid "ab1fe12f-1201-4f35-939b-4556d356a5c7")
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d8b")
 		)
 		(pin "1"
-			(uuid "613d3114-2500-4f17-894d-aeff0264e6c7")
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a76")
+		)
+		(pin "5"
+			(uuid "5e928c44-7002-4fa8-b5db-4191f8540da2")
+		)
+		(pin "6"
+			(uuid "2dbb7b34-4393-481e-85e9-6ec58062d6a9")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b0a0")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D914")
+					(reference "S906")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 119.38 97.79 0)
-		(unit 1)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 193.04 68.58 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07848466-e61d-46d4-ad12-0028bcb02d18")
-		(property "Reference" "SW916"
-			(at 119.38 90.17 0)
+		(uuid "0e442702-7aae-4972-8026-e041906356ec")
+		(property "Reference" "S901"
+			(at 186.944 60.198 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "SW_D4"
-			(at 119.38 92.71 0)
+		(property "Value" "A1"
+			(at 186.436 75.184 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 119.38 97.79 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 193.04 68.58 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 119.38 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cea0beed-129c-4d65-9a6c-272764e08403")
-		)
-		(pin "1"
-			(uuid "a677171e-a1cc-4166-87a3-d808ca35d06c")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW417")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW916")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 68.58 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0c98e89c-2df7-4512-b011-f6d1e9f6b790")
-		(property "Reference" "SW909"
-			(at 68.58 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_C1"
-			(at 68.58 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 68.58 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 68.58 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3cce0557-4178-49c4-a23d-651b0ba7bfef")
-		)
-		(pin "1"
-			(uuid "8dc37f00-8a7b-4077-811a-ef2b7a10e308")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW410")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW909")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 264.16 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0f143cb4-8b10-4b81-921e-4e79252a93de")
-		(property "Reference" "#PWR0908"
-			(at 264.16 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 263.906 130.302 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 264.16 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 134.62 0)
+			(at 193.04 68.58 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3234,23 +2367,108 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 264.16 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "0149aa3a-4d10-4c56-a9e3-54f28689cbc9")
+		)
+		(pin "5"
+			(uuid "e1e7e7b4-73b1-4a9e-a3cc-e433adb6806a")
+		)
+		(pin "6"
+			(uuid "a893d905-9c8f-4eb3-943e-57b74a27c965")
+		)
+		(pin "3"
+			(uuid "0b227a5d-15a5-4622-8a2b-480a3420b762")
 		)
 		(pin "1"
-			(uuid "f8e2bf90-b57a-4554-bd78-3fbf3527c639")
+			(uuid "40f694fe-9ad4-4d9a-bf1c-dffcc3673e7e")
+		)
+		(pin "4"
+			(uuid "c08acbf8-3116-42d5-80bb-fe9f85a71bdf")
+		)
+		(instances
+			(project ""
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "S901")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 193.04 93.98 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1005006a-cb6b-40aa-836d-eb07abc8068c")
+		(property "Reference" "S905"
+			(at 186.944 85.598 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "B1"
+			(at 186.69 100.584 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 193.04 93.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 93.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aa8837d9-c229-494a-8dfb-a7420983b5da")
+		)
+		(pin "5"
+			(uuid "e1e7e7b4-73b1-4a9e-a3cc-e433adb6806b")
+		)
+		(pin "6"
+			(uuid "a893d905-9c8f-4eb3-943e-57b74a27c966")
+		)
+		(pin "3"
+			(uuid "ef4f44fd-5f5d-455c-90a3-9436627aaeaa")
+		)
+		(pin "1"
+			(uuid "382cb19f-dc51-48c9-9caf-d55efed4cb22")
+		)
+		(pin "4"
+			(uuid "bd6468a3-bdbb-4296-bc06-921b86c75d5f")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "#PWR0908")
-					(unit 1)
+					(reference "S905")
+					(unit 2)
 				)
 			)
 		)
@@ -3394,51 +2612,51 @@
 		)
 	)
 	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 193.04 144.78 0)
-		(unit 1)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 246.38 119.38 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "126faab5-504b-46b9-8073-c5a0642ae467")
-		(property "Reference" "D913"
-			(at 201.93 139.6298 0)
+		(uuid "23276e61-0368-40ec-bb08-21dd61017a10")
+		(property "Reference" "S912"
+			(at 240.284 111.76 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 201.93 141.5349 0)
+		(property "Value" "C4"
+			(at 239.522 125.73 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 193.294 157.734 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 246.38 119.38 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 193.04 144.78 0)
+			(at 246.38 119.38 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 193.04 144.78 0)
+			(at 246.38 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3446,73 +2664,79 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "6b492d44-8f41-46c0-b502-217f241fd4a2")
-		)
 		(pin "2"
-			(uuid "a83bd61b-fbd2-4f90-b9e7-e8dcb441a5b5")
+			(uuid "86f9f856-6aa5-42cd-b632-39e5c75f1a29")
 		)
 		(pin "4"
-			(uuid "11e681df-5d4c-4ff5-8f7b-2225111bc0d0")
+			(uuid "a25d31f6-1242-46c8-a35c-5bdce99256ef")
 		)
 		(pin "1"
-			(uuid "34dfaca7-f9a4-4d93-8480-423d1ef523ae")
+			(uuid "8f9dae02-e051-4200-8ad7-e476d3a04ab2")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f1109")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726acc")
+		)
+		(pin "3"
+			(uuid "732a81eb-7ed4-4b20-8680-1d18e11b0165")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D913")
-					(unit 1)
+					(reference "S912")
+					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 246.38 68.58 0)
-		(unit 1)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 246.38 93.98 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16486c5d-cc30-4102-94f9-21bca5fef019")
-		(property "Reference" "D904"
-			(at 255.27 63.4298 0)
+		(uuid "254ecc65-aca8-4b2d-b455-d4d737dfb875")
+		(property "Reference" "S908"
+			(at 240.284 86.36 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 255.27 65.3349 0)
+		(property "Value" "B4"
+			(at 239.522 100.33 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 246.634 81.534 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 246.38 93.98 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 68.58 0)
+			(at 246.38 93.98 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 246.38 68.58 0)
+			(at 246.38 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3520,369 +2744,79 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "ee4ec27b-da36-4692-a793-fb0a9cc13271")
-		)
 		(pin "2"
-			(uuid "5f9d48e3-cd2a-478d-b57b-6807cc9a2562")
+			(uuid "f35d8c77-f0e1-48e0-968d-3e6ff17a74e7")
 		)
 		(pin "4"
-			(uuid "c7c16a10-2994-45c4-bb0b-b49dcdfd64dc")
+			(uuid "1a5d94c5-4c3c-4db0-8573-993f8d6e1b89")
 		)
 		(pin "1"
-			(uuid "6fc11d61-dd84-4ce8-8b1a-2e1c90a0eb9d")
+			(uuid "844c025e-9365-4030-8cd8-408129b5ad53")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f110a")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726acd")
+		)
+		(pin "3"
+			(uuid "8113b23e-5562-4439-b7f0-7523ea5ff011")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D904")
-					(unit 1)
+					(reference "S908")
+					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 193.04 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "19a844e5-b538-4167-869e-cb857f604fdb")
-		(property "Reference" "D909"
-			(at 201.93 114.2298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 201.93 116.1349 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 193.294 132.334 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 193.04 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "c371ac13-b240-4988-b60e-07925e253d37")
-		)
-		(pin "2"
-			(uuid "a9b83613-ac76-4c68-aa2f-ee56c114da83")
-		)
-		(pin "4"
-			(uuid "e0b6f8ca-8bab-4721-8e34-ffa8db73cd3c")
-		)
-		(pin "1"
-			(uuid "c7b72b0e-ae84-42cf-b916-e8e72d9217ba")
-		)
-		(instances
-			(project "minstro_combined_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D909")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 228.6 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1a40d0fc-724b-4fb2-a1fc-dde221d08717")
-		(property "Reference" "D903"
-			(at 237.49 63.4298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 237.49 65.3349 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 228.854 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 228.6 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "eb0283cb-42a1-466a-aae8-074f70d82f4a")
-		)
-		(pin "2"
-			(uuid "d9e75044-fc5f-40ca-a43e-44097972301b")
-		)
-		(pin "4"
-			(uuid "eaf36c98-91a2-4c52-8143-a63b7b145142")
-		)
-		(pin "1"
-			(uuid "64749692-aed4-4e3d-8479-52b52d8ceba2")
-		)
-		(instances
-			(project "minstro_combined_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D903")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
 		(at 119.38 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1cc30ef9-703b-4251-97bd-6e88050228a3")
-		(property "Reference" "SW912"
-			(at 119.38 73.66 0)
+		(uuid "2ec34e13-ab61-44e4-9fab-5804a8a6c97a")
+		(property "Reference" "S912"
+			(at 119.38 73.914 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "SW_C4"
+		(property "Value" "C4"
 			(at 119.38 76.2 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
 			(at 119.38 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 119.38 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c083d8a4-ceff-4ec8-925e-2ff34b25ed71")
-		)
-		(pin "1"
-			(uuid "d16b5f7e-b51d-4fc5-9b29-52b614140c0d")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW413")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW912")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 110.49 52.07 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1dd0797c-18d7-4e24-8f09-b9957e893270")
-		(property "Reference" "R903"
-			(at 110.49 46.99 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "R_3"
-			(at 110.49 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 110.49 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 110.49 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8c6bb55a-23a7-4966-aad2-45c0470d4148")
-		)
-		(pin "1"
-			(uuid "aa68cc3c-dae7-4eba-9b35-3d874319704d")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R403")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R903")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 246.38 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "243df841-90cb-4574-bbbd-f3db3b48979b")
-		(property "Reference" "D912"
-			(at 255.27 114.2298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 255.27 116.1349 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 246.634 132.334 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 119.38 0)
+			(at 119.38 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 246.38 119.38 0)
+			(at 119.38 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3890,73 +2824,79 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "3d03fb7c-524c-477c-97cb-de26fd9139e9")
-		)
 		(pin "2"
-			(uuid "2be4f3c7-3939-4220-9d1e-5f9eeb19f155")
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c59")
 		)
 		(pin "4"
-			(uuid "8f943808-e71e-4438-9493-86139d78d0b0")
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d89")
 		)
 		(pin "1"
-			(uuid "46bd27a8-7cff-4439-b80c-ea650295df5c")
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a74")
+		)
+		(pin "5"
+			(uuid "aed86095-1eb9-4a1f-a0e5-f743d85d31cd")
+		)
+		(pin "6"
+			(uuid "1897b232-5ca3-4364-a274-3b32ce8bf0b5")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b09e")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D912")
+					(reference "S912")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 68.58 48.26 0)
-		(unit 1)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 246.38 68.58 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24f8415c-6e38-45d7-bd0f-8548307a243a")
-		(property "Reference" "SW901"
-			(at 68.58 40.64 0)
+		(uuid "33d01c97-778d-45c9-9c33-dc7d49b6e582")
+		(property "Reference" "S904"
+			(at 240.284 60.96 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "SW_A1"
-			(at 68.58 43.18 0)
+		(property "Value" "A4"
+			(at 239.522 75.438 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 68.58 48.26 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 246.38 68.58 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 68.58 48.26 0)
+		(property "Datasheet" ""
+			(at 246.38 68.58 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3965,72 +2905,237 @@
 			)
 		)
 		(pin "2"
-			(uuid "86012951-ede5-4aab-a7fd-011ac12fe939")
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c5a")
+		)
+		(pin "4"
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d8a")
 		)
 		(pin "1"
-			(uuid "9def378e-302b-4005-9d5c-5955ae2bf5e6")
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a75")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f110b")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726ace")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b09f")
 		)
 		(instances
 			(project ""
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW402")
-					(unit 1)
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "S904")
+					(unit 2)
 				)
 			)
+		)
+	)
+	(symbol
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 193.04 119.38 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "34fc0596-3324-477e-bda5-4bd03a7c0fb3")
+		(property "Reference" "S909"
+			(at 186.944 110.998 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "C1"
+			(at 186.436 125.73 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 193.04 119.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 119.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "da754bb5-405c-43eb-a6a2-eb117a3f6af2")
+		)
+		(pin "5"
+			(uuid "e1e7e7b4-73b1-4a9e-a3cc-e433adb6806c")
+		)
+		(pin "6"
+			(uuid "a893d905-9c8f-4eb3-943e-57b74a27c967")
+		)
+		(pin "3"
+			(uuid "7b3be3c4-a62f-4c93-8740-cfaf83a94a3d")
+		)
+		(pin "1"
+			(uuid "595cff62-d93a-40c3-be7c-d64224849728")
+		)
+		(pin "4"
+			(uuid "2cf0d212-e560-4849-94bd-c257023886eb")
+		)
+		(instances
+			(project "minstro_combined_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "S909")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 210.82 68.58 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37aa5a0f-31a0-47a8-a012-9d81bda7a767")
+		(property "Reference" "S902"
+			(at 204.724 60.96 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "A2"
+			(at 204.216 75.184 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 210.82 68.58 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 68.58 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c5c")
+		)
+		(pin "4"
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d8c")
+		)
+		(pin "1"
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a77")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f110c")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726acf")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b0a1")
+		)
+		(instances
 			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW901")
-					(unit 1)
+					(reference "S902")
+					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 210.82 119.38 0)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 102.87 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2bb86b3d-f6d6-4207-a6d6-53af87d5df21")
-		(property "Reference" "D910"
-			(at 219.71 114.2298 0)
+		(uuid "3c6259b5-431c-4048-8d6b-9288d319e370")
+		(property "Reference" "S907"
+			(at 102.87 57.15 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 219.71 116.1349 0)
+		(property "Value" "B3"
+			(at 102.87 59.69 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 211.074 132.334 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 102.87 64.77 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 119.38 0)
+			(at 102.87 64.77 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 210.82 119.38 0)
+			(at 102.87 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4038,73 +3143,79 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "80cb7eed-3284-482c-a986-6e3cfa9b2f40")
-		)
 		(pin "2"
-			(uuid "d19be43f-830c-40a2-a34e-93684b9293da")
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c5d")
 		)
 		(pin "4"
-			(uuid "afa92bf5-94b7-46ea-bb12-5f82c6ec6efa")
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d8d")
 		)
 		(pin "1"
-			(uuid "24321ae8-3ec0-44b2-8a14-0263b4ab6800")
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a78")
+		)
+		(pin "5"
+			(uuid "3163c5dc-f41a-49ca-aba7-f93abb3961c6")
+		)
+		(pin "6"
+			(uuid "1987c579-43a3-4f2b-9d95-066ed1fb792b")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b0a2")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D910")
+					(reference "S907")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 228.6 93.98 0)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 119.38 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "330f1aa7-ef4d-4d46-b426-d2ab434461fe")
-		(property "Reference" "D907"
-			(at 237.49 88.8298 0)
+		(uuid "417009fa-d97c-4a8b-b5c4-e5c0adc78bbf")
+		(property "Reference" "S904"
+			(at 119.38 40.894 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 237.49 90.7349 0)
+		(property "Value" "A4"
+			(at 119.38 43.18 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 228.854 106.934 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 119.38 48.26 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 93.98 0)
+			(at 119.38 48.26 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 228.6 93.98 0)
+			(at 119.38 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4112,294 +3223,78 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "fe83dd50-6c73-4de2-a6dd-756dbc5426c8")
-		)
 		(pin "2"
-			(uuid "eb6ef685-cd77-4aa3-938a-0854383809f4")
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c5e")
 		)
 		(pin "4"
-			(uuid "6bcb3d77-e50e-4da0-a606-93dfbe9a8f28")
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d8e")
 		)
 		(pin "1"
-			(uuid "0c48d0b1-7751-4812-9adb-85ce5277b5bd")
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a79")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f110d")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726ad0")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b0a3")
 		)
 		(instances
-			(project "minstro_combined_board"
+			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D907")
+					(reference "S904")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 76.2 85.09 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "35f133ac-d021-44fc-95cf-c796ad514cd2")
-		(property "Reference" "R909"
-			(at 76.2 80.01 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "R_1"
-			(at 76.2 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 76.2 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "761b794c-2b23-4f29-803d-4afadf5f9e97")
-		)
-		(pin "1"
-			(uuid "e6b6ad84-cd5c-4abe-9d1d-fc3603c5f3fc")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R409")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R909")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 127 52.07 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "383027dd-d22a-4178-951b-580460a683fe")
-		(property "Reference" "R904"
-			(at 127 46.99 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "R_4"
-			(at 127 49.53 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 127 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 127 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "117ecb28-5bc0-4a41-b111-5b6d75bf5ead")
-		)
-		(pin "1"
-			(uuid "7b23016f-4d71-4597-bbbf-1247815b3484")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R404")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R904")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 76.2 68.58 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38d457d2-38ff-4d3a-9a6a-983c95f30a32")
-		(property "Reference" "R905"
-			(at 76.2 63.5 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "R_1"
-			(at 76.2 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 76.2 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "099db75b-08a0-4cb8-a325-ada68fddcd0d")
-		)
-		(pin "1"
-			(uuid "8b8a8c7e-f8e1-4147-9e92-ba29a1cbfa23")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R405")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R905")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
 		(at 102.87 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4205f9c8-14bb-4025-aa0a-d2297c190b44")
-		(property "Reference" "SW911"
+		(uuid "431b1aec-a0ae-43b8-bc9a-1d3231c49059")
+		(property "Reference" "S911"
 			(at 102.87 73.66 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "SW_C3"
+		(property "Value" "C3"
 			(at 102.87 76.2 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
 			(at 102.87 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 102.87 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+		(property "Description" ""
 			(at 102.87 81.28 0)
 			(effects
 				(font
@@ -4409,72 +3304,78 @@
 			)
 		)
 		(pin "2"
-			(uuid "7acba598-1ee5-4eb6-99a6-ae8934104ce6")
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c5f")
+		)
+		(pin "4"
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d8f")
 		)
 		(pin "1"
-			(uuid "a864ac20-2aa9-4fe0-a323-93436494c050")
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a7a")
+		)
+		(pin "5"
+			(uuid "19748db1-cc07-44e8-818f-c4d9b0e46f13")
+		)
+		(pin "6"
+			(uuid "0fecd348-1abd-4dbe-8f3a-d6ce81e94336")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b0a4")
 		)
 		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW412")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
+			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW911")
+					(reference "S911")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 110.49 85.09 90)
-		(unit 1)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 228.6 68.58 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "42920ddd-e2a0-42d3-b00e-9e506bab5a30")
-		(property "Reference" "R911"
-			(at 110.49 80.01 90)
+		(uuid "4b445310-ebfa-46ce-9921-f4fa835d2f21")
+		(property "Reference" "S903"
+			(at 222.504 60.96 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "R_3"
-			(at 110.49 82.55 90)
+		(property "Value" "A3"
+			(at 221.996 75.438 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 110.49 85.09 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 228.6 68.58 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 110.49 85.09 0)
+		(property "Datasheet" ""
+			(at 228.6 68.58 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4483,72 +3384,78 @@
 			)
 		)
 		(pin "2"
-			(uuid "d7be2840-fa61-40c2-b0e6-b0f8daa29ac9")
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c60")
+		)
+		(pin "4"
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d90")
 		)
 		(pin "1"
-			(uuid "dd6eafaa-da3f-4d7d-90bc-dd8fbdd4ddbc")
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a7b")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f110e")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726ad1")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b0a5")
 		)
 		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R411")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
+			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R911")
-					(unit 1)
+					(reference "S903")
+					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 93.98 52.07 90)
-		(unit 1)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 210.82 119.38 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "45500a6c-cbfc-4bd5-acee-49e0ab370fde")
-		(property "Reference" "R902"
-			(at 93.98 46.99 90)
+		(uuid "4bf72cbf-3035-4ce4-aadb-d2bd4871ed2a")
+		(property "Reference" "S910"
+			(at 204.724 111.76 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "R_2"
-			(at 93.98 49.53 90)
+		(property "Value" "C2"
+			(at 203.962 125.73 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 93.98 52.07 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 210.82 119.38 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 93.98 52.07 0)
+		(property "Datasheet" ""
+			(at 210.82 119.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 210.82 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4557,22 +3464,28 @@
 			)
 		)
 		(pin "2"
-			(uuid "8b87f4f8-dcb2-41cc-93ec-7b8a7e9eccf8")
+			(uuid "19c4558e-7b7c-4e92-bf31-fb9868cdee03")
+		)
+		(pin "4"
+			(uuid "022ea9c9-9302-4cbb-b534-af4d1a4caecb")
 		)
 		(pin "1"
-			(uuid "c62a27c1-06cd-4f9e-9912-8408338f3677")
+			(uuid "b1555c0a-74b4-4995-bbce-09cdb7358a84")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f110f")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726ad2")
+		)
+		(pin "3"
+			(uuid "868c7b7b-c170-4661-8c34-ba7e704748a6")
 		)
 		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R402")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
+			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R902")
-					(unit 1)
+					(reference "S910")
+					(unit 2)
 				)
 			)
 		)
@@ -4716,51 +3629,51 @@
 		)
 	)
 	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 210.82 68.58 0)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 68.58 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "55ca1a0b-ae28-47b0-aaed-a5d2747b4aa8")
-		(property "Reference" "D902"
-			(at 219.71 63.4298 0)
+		(uuid "56abfede-6e90-4ce8-8262-971550f43771")
+		(property "Reference" "S909"
+			(at 68.58 73.66 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 219.71 65.3349 0)
+		(property "Value" "C1"
+			(at 68.58 76.2 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 211.074 81.534 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 68.58 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 68.58 0)
+			(at 68.58 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 210.82 68.58 0)
+			(at 68.58 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4768,73 +3681,79 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "e31630f6-ee3c-415c-a757-b9bcfcd68f3c")
-		)
 		(pin "2"
-			(uuid "de8d0723-7b23-49be-a9b1-15312b259077")
+			(uuid "0149aa3a-4d10-4c56-a9e3-54f28689cbca")
 		)
-		(pin "4"
-			(uuid "987d8630-1403-4c10-b5a1-967f146c626b")
+		(pin "5"
+			(uuid "31406cd2-4eae-4dec-8d27-0005cba01528")
+		)
+		(pin "6"
+			(uuid "5bc46b94-9245-4991-9412-33e0e0391cda")
+		)
+		(pin "3"
+			(uuid "0b227a5d-15a5-4622-8a2b-480a3420b763")
 		)
 		(pin "1"
-			(uuid "2076b973-216c-4b8f-ada6-c59e7a4e8eb0")
+			(uuid "40f694fe-9ad4-4d9a-bf1c-dffcc3673e7f")
+		)
+		(pin "4"
+			(uuid "c08acbf8-3116-42d5-80bb-fe9f85a71be0")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D902")
+					(reference "S909")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 76.2 52.07 90)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 68.58 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5eb71a95-0807-4005-bf57-a92acb8a3780")
-		(property "Reference" "R901"
-			(at 76.2 46.99 90)
+		(uuid "677e009c-72a2-430f-bbf0-4ed02d974f8d")
+		(property "Reference" "S901"
+			(at 68.58 40.64 0)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "R_1"
-			(at 76.2 49.53 90)
+		(property "Value" "A1"
+			(at 68.58 43.18 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 52.07 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 68.58 48.26 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 76.2 52.07 0)
+		(property "Datasheet" ""
+			(at 68.58 48.26 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 68.58 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4843,294 +3762,78 @@
 			)
 		)
 		(pin "2"
-			(uuid "599dd90d-0934-4f71-a2da-9f6dc46a3d5f")
+			(uuid "0149aa3a-4d10-4c56-a9e3-54f28689cbcb")
+		)
+		(pin "5"
+			(uuid "e1e7e7b4-73b1-4a9e-a3cc-e433adb6806d")
+		)
+		(pin "6"
+			(uuid "a893d905-9c8f-4eb3-943e-57b74a27c968")
+		)
+		(pin "3"
+			(uuid "0b227a5d-15a5-4622-8a2b-480a3420b764")
 		)
 		(pin "1"
-			(uuid "f2716239-f9a0-448c-a84f-e7d245a55e11")
+			(uuid "40f694fe-9ad4-4d9a-bf1c-dffcc3673e80")
+		)
+		(pin "4"
+			(uuid "c08acbf8-3116-42d5-80bb-fe9f85a71be1")
 		)
 		(instances
 			(project ""
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R401")
-					(unit 1)
-				)
-			)
-			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R901")
+					(reference "S901")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 76.2 101.6 90)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 86.36 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "60e0e2d9-a6f9-4d30-b009-75caba1ee037")
-		(property "Reference" "R913"
-			(at 76.2 96.52 90)
+		(uuid "93cae5d7-cf83-4c47-ad05-951d112e6b45")
+		(property "Reference" "S910"
+			(at 86.36 73.66 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "R_1"
-			(at 76.2 99.06 90)
+		(property "Value" "C2"
+			(at 86.36 76.2 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 76.2 101.6 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 86.36 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 76.2 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "91dd4dab-9dba-4af0-9dda-18662d9d73d8")
-		)
-		(pin "1"
-			(uuid "b060666e-7e2c-4a4d-9e45-a9e51498d471")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R413")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R913")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 68.58 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "677877a5-9c4a-4154-adb2-9754f98cd53d")
-		(property "Reference" "SW905"
-			(at 68.58 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_B1"
-			(at 68.58 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 68.58 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 68.58 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dccd55ee-428d-4181-b076-1968946800b3")
-		)
-		(pin "1"
-			(uuid "e9b592a5-e6dd-48e3-a58f-88215c8a69b8")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW406")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW905")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 127 68.58 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6f7f26d8-3311-4f5f-8b61-4255ec5c011e")
-		(property "Reference" "R908"
-			(at 127 63.5 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "R_4"
-			(at 127 66.04 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 127 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 127 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d17168ad-60fc-4cc9-9d66-94ac9cccf862")
-		)
-		(pin "1"
-			(uuid "2eb9ec5b-cf5f-4e75-9b50-9b6fffa15d3f")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R408")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R908")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 246.38 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73e28e5a-24f4-453e-9257-492cd96ba7e7")
-		(property "Reference" "D916"
-			(at 255.27 139.6298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 255.27 141.5349 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 246.634 157.734 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 246.38 144.78 0)
+			(at 86.36 81.28 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 246.38 144.78 0)
+			(at 86.36 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5138,576 +3841,64 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "668071a1-8c2f-4f8a-9d9d-4b4e5b1c8738")
-		)
 		(pin "2"
-			(uuid "0e031e11-b4e5-4234-846a-e2efa82c2911")
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c61")
 		)
 		(pin "4"
-			(uuid "85e09c30-f1c9-4bf4-8931-345f9974c636")
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d91")
 		)
 		(pin "1"
-			(uuid "b0d815c4-bec5-4270-ba52-155c99380706")
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a7c")
+		)
+		(pin "5"
+			(uuid "d95642ad-898a-4d2e-bdaa-447c8e865ec7")
+		)
+		(pin "6"
+			(uuid "8f7a7046-6fca-4ab1-a885-5c4281c72029")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b0a6")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D916")
+					(reference "S910")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 228.6 119.38 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7556f84f-2b50-4920-96b9-d03e02296c94")
-		(property "Reference" "D911"
-			(at 237.49 114.2298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 237.49 116.1349 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 228.854 132.334 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 228.6 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "29c50d30-7adc-4e55-9adb-1a4e23dc89fd")
-		)
-		(pin "2"
-			(uuid "fd864014-f186-4154-8501-6cb79c1604c6")
-		)
-		(pin "4"
-			(uuid "3c4d1d54-5d40-4048-a140-ba4850241d6b")
-		)
-		(pin "1"
-			(uuid "c294a4ed-428c-47e6-a8e6-636545406872")
-		)
-		(instances
-			(project "minstro_combined_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D911")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 102.87 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "764fd6ba-b723-4421-9ebf-53bff00523a1")
-		(property "Reference" "SW903"
-			(at 102.87 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_A3"
-			(at 102.87 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 102.87 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 102.87 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 102.87 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "2c236236-9b5a-4fa3-a9b7-2f3f6e407993")
-		)
-		(pin "1"
-			(uuid "21306d4a-1944-4fdd-bb7e-92d66ec92bef")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW404")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW903")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 86.36 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "853ef89a-4d7b-4ac6-9e04-b2455059fc63")
-		(property "Reference" "SW906"
-			(at 86.36 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_B2"
-			(at 86.36 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 86.36 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 86.36 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e85f0ed9-d528-4c0e-8848-ffdc13afb3a8")
-		)
-		(pin "1"
-			(uuid "1f8adf48-76eb-46cb-b8d4-e841750025f6")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW407")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW906")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 93.98 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "88c8d7d9-0751-41d5-a915-857f06aea96a")
-		(property "Reference" "R914"
-			(at 93.98 96.52 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "R_2"
-			(at 93.98 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 93.98 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 93.98 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7588e3c4-6849-4f2e-a3cf-478529815a78")
-		)
-		(pin "1"
-			(uuid "2b24e9f2-06c9-475b-8f0a-ab38e2f7e155")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R414")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R914")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 127 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a6b692b-0027-45de-a73e-1ff205c869c2")
-		(property "Reference" "R916"
-			(at 127 96.52 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "R_4"
-			(at 127 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 127 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 127 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "83338e8d-ff51-4e0b-802b-f99e9dc552db")
-		)
-		(pin "1"
-			(uuid "61105e97-ac2b-442c-92f4-edc7e504ea53")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R416")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R916")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 193.04 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "90ca12c3-69d6-4e92-93be-30521891dd4d")
-		(property "Reference" "D905"
-			(at 201.93 88.8298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 201.93 90.7349 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 193.294 106.934 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 193.04 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "4b5c94c4-5cc8-47a1-8cce-878ae7a7b556")
-		)
-		(pin "2"
-			(uuid "9f20657b-ac25-4b2e-9aa0-b9837cf1a920")
-		)
-		(pin "4"
-			(uuid "fbb72d5d-1fd4-4323-a9e5-f11d83a3b97a")
-		)
-		(pin "1"
-			(uuid "572b60e7-7013-4def-9292-15c9b4f4b6d5")
-		)
-		(instances
-			(project "minstro_combined_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D905")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 246.38 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9208e4e1-a943-4f99-88f2-cdaa5279c25d")
-		(property "Reference" "D908"
-			(at 255.27 88.8298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 255.27 90.7349 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 246.634 106.934 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 246.38 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "761c7efc-2bb6-4ace-a974-1f8af98e928f")
-		)
-		(pin "2"
-			(uuid "d7bb1267-952f-46a2-867e-b15a229b1cbb")
-		)
-		(pin "4"
-			(uuid "8bcf0e8d-b840-4d64-95cc-95e3fd4e804b")
-		)
-		(pin "1"
-			(uuid "33bd184e-e66f-433b-9962-2ecc8876fe7a")
-		)
-		(instances
-			(project "minstro_combined_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D908")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
 		(at 210.82 93.98 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9222d995-fdfb-4cc7-836e-3f2f0ab912f0")
-		(property "Reference" "D906"
-			(at 219.71 88.8298 0)
+		(uuid "9d336715-11b7-46ce-bbd2-76361ea4b42b")
+		(property "Reference" "S906"
+			(at 204.724 86.36 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 219.71 90.7349 0)
+		(property "Value" "B2"
+			(at 203.962 100.584 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 211.074 106.934 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 210.82 93.98 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
@@ -5716,7 +3907,7 @@
 			(at 210.82 93.98 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
@@ -5730,258 +3921,36 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "89fc9094-57c1-4b15-8190-11f74c9a121e")
-		)
 		(pin "2"
-			(uuid "b0603c8b-8eff-4a66-8d72-fdabd70b9a78")
+			(uuid "8716e871-2e08-44c3-9223-7da9f0634cef")
 		)
 		(pin "4"
-			(uuid "680f7641-e3f2-47c9-8568-d2616cd7a292")
+			(uuid "676e4ee2-2749-4da6-9354-fdd72a8a7c68")
 		)
 		(pin "1"
-			(uuid "212237a6-af24-4eaa-a27a-ecc7c037bbd0")
+			(uuid "47f57b3c-4279-408c-8e2d-0b4a85fb6330")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f1110")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726ad3")
+		)
+		(pin "3"
+			(uuid "88bd4253-292b-4d6e-b05c-de36b0beb529")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D906")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 127 85.09 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9930b8e4-8aa6-406f-9a4d-eb8806094a64")
-		(property "Reference" "R912"
-			(at 127 80.01 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "R_4"
-			(at 127 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 127 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 127 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "277cbfd0-c12f-4630-93e7-2b931981b497")
-		)
-		(pin "1"
-			(uuid "adf4e3e5-2146-4e19-af24-ebeae888d961")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R412")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R912")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 193.04 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a32ecfe-e871-44d1-8e30-c1bfe157bc80")
-		(property "Reference" "D901"
-			(at 201.93 63.4298 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "~"
-			(at 201.93 65.3349 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 193.294 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 193.04 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "de36540e-0ebb-4e96-835e-ef1f50af0c1c")
-		)
-		(pin "2"
-			(uuid "53fa6320-c522-4259-9a20-9050b4551640")
-		)
-		(pin "4"
-			(uuid "ca822fa7-d3f2-4676-ac1d-31b2ffba1437")
-		)
-		(pin "1"
-			(uuid "49182180-4670-4c64-b922-f37cdf99ee62")
-		)
-		(instances
-			(project ""
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "D401")
-					(unit 1)
-				)
-			)
-			(project ""
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D901")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 86.36 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9c85aafe-4bee-4468-90b7-0fb208643fca")
-		(property "Reference" "SW902"
-			(at 86.36 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_A2"
-			(at 86.36 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 86.36 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 86.36 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c0f56b95-9022-426a-a35b-8267e0151b78")
-		)
-		(pin "1"
-			(uuid "e901bd20-d6a2-4fc5-8b84-3f8c76de65c1")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW403")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW902")
-					(unit 1)
+					(reference "S906")
+					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "Switch:SW_Push")
-		(at 97.79 139.7 0)
+		(at 93.98 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5989,8 +3958,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9df284ae-a390-4393-9af8-fa981f733637")
-		(property "Reference" "SW917"
-			(at 97.79 132.08 0)
+		(property "Reference" "S917"
+			(at 93.98 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5998,7 +3967,7 @@
 			)
 		)
 		(property "Value" "POWER"
-			(at 97.79 134.62 0)
+			(at 93.98 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6006,7 +3975,7 @@
 			)
 		)
 		(property "Footprint" "BVH_Switches:Tac_SPST_RightAngle_SideActuated_THT"
-			(at 97.79 134.62 0)
+			(at 93.98 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6015,7 +3984,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 134.62 0)
+			(at 93.98 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6024,7 +3993,7 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
-			(at 97.79 139.7 0)
+			(at 93.98 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6047,7 +4016,7 @@
 			)
 			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW917")
+					(reference "S917")
 					(unit 1)
 				)
 			)
@@ -6055,7 +4024,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 106.68 139.7 0)
+		(at 102.87 182.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6064,7 +4033,7 @@
 		(fields_autoplaced yes)
 		(uuid "a533a846-47ee-425d-bb40-9898aaa0db2d")
 		(property "Reference" "#PWR0909"
-			(at 106.68 146.05 0)
+			(at 102.87 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6073,7 +4042,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 144.78 0)
+			(at 102.87 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6081,7 +4050,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 139.7 0)
+			(at 102.87 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6090,7 +4059,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 139.7 0)
+			(at 102.87 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6099,7 +4068,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 139.7 0)
+			(at 102.87 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6126,51 +4095,51 @@
 		)
 	)
 	(symbol
-		(lib_id "BVH_LED:WS2182-Common")
-		(at 228.6 144.78 0)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 68.58 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a9ee15d3-69f3-4726-8fe1-b667b662a2ce")
-		(property "Reference" "D915"
-			(at 237.49 139.6298 0)
+		(uuid "ac5f0872-d508-4e54-b5d6-6f379e14414c")
+		(property "Reference" "S905"
+			(at 68.58 57.15 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 237.49 141.5349 0)
+		(property "Value" "B1"
+			(at 68.58 59.69 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_LED:SK6812Mini-E_Front"
-			(at 228.854 157.734 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 68.58 64.77 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 144.78 0)
+			(at 68.58 64.77 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Description" ""
-			(at 228.6 144.78 0)
+			(at 68.58 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6178,22 +4147,108 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "e5a4bf3e-aa0b-4f1c-acf2-56ab79534f44")
-		)
 		(pin "2"
-			(uuid "39e82862-0f97-4dcb-9122-ab2f89fff058")
+			(uuid "0149aa3a-4d10-4c56-a9e3-54f28689cbcc")
 		)
-		(pin "4"
-			(uuid "37e2ffcf-8a99-4382-8e7d-913dc4f51348")
+		(pin "5"
+			(uuid "aaeca037-a475-4912-9077-9cfb5ee8513c")
+		)
+		(pin "6"
+			(uuid "1b0689e6-d19c-4f0f-972f-696ff7d423cb")
+		)
+		(pin "3"
+			(uuid "0b227a5d-15a5-4622-8a2b-480a3420b765")
 		)
 		(pin "1"
-			(uuid "bc9650fc-c029-4f7e-b74f-6feb983894c5")
+			(uuid "40f694fe-9ad4-4d9a-bf1c-dffcc3673e81")
+		)
+		(pin "4"
+			(uuid "c08acbf8-3116-42d5-80bb-fe9f85a71be2")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "D915")
+					(reference "S905")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 119.38 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afc8a5f9-1308-404f-a5f6-4d9749ede662")
+		(property "Reference" "S908"
+			(at 119.38 57.404 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "B4"
+			(at 119.38 59.69 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 119.38 64.77 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 64.77 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c62")
+		)
+		(pin "4"
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d92")
+		)
+		(pin "1"
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a7d")
+		)
+		(pin "5"
+			(uuid "c2b4c403-f447-4d6e-abcb-60b5d776e6e7")
+		)
+		(pin "6"
+			(uuid "e1f760d8-3fc5-4bd5-b8ff-695fbbe74ce6")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b0a7")
+		)
+		(instances
+			(project "minstro_combined_board"
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "S908")
 					(unit 1)
 				)
 			)
@@ -6272,339 +4327,51 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 93.98 85.09 90)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 102.87 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b04384ee-1903-4ecc-9a26-ae9b4896b79b")
-		(property "Reference" "R910"
-			(at 93.98 80.01 90)
+		(uuid "b1354b87-42e7-4c93-8dcf-4baab1d61615")
+		(property "Reference" "S903"
+			(at 102.87 40.64 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "R_2"
-			(at 93.98 82.55 90)
+		(property "Value" "A3"
+			(at 102.87 43.18 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 93.98 85.09 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 102.87 48.26 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 93.98 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 93.98 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dbf701d6-dee6-4080-9d15-676e0f2785b1")
-		)
-		(pin "1"
-			(uuid "46c3799e-569e-4732-ad9f-a350adc21f4b")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R410")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R910")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 86.36 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b3cf592d-c84e-480a-b852-2a5696d66209")
-		(property "Reference" "SW910"
-			(at 86.36 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_C2"
-			(at 86.36 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 86.36 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 86.36 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a837666d-4e8f-4849-8920-dc6bdbfcf191")
-		)
-		(pin "1"
-			(uuid "fd64ba5d-351c-4e4a-b01c-128ceed01f29")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW411")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW910")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 86.36 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc32d076-46d8-4e3c-b12a-49b742ba3ffe")
-		(property "Reference" "SW914"
-			(at 86.36 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_D2"
-			(at 86.36 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 86.36 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 86.36 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 86.36 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "fd7e1166-d705-4a6d-a2ab-02a260ef1fa9")
-		)
-		(pin "1"
-			(uuid "fd141390-72b8-493d-a291-dd65dcbbd125")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW415")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW914")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 102.87 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c3097c9d-3744-49f9-b9be-c488911463a5")
-		(property "Reference" "SW915"
-			(at 102.87 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_D3"
-			(at 102.87 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 102.87 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 102.87 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 102.87 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f699211f-7cbd-43a0-a583-e65eb4161d6a")
-		)
-		(pin "1"
-			(uuid "dd94e28a-fbcd-4716-81bf-23609534a6af")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW416")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW915")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 275.59 156.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c7a78fbe-03fa-4143-82bd-8417cb913cb7")
-		(property "Reference" "#PWR0910"
-			(at 275.59 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 275.59 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 275.59 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 275.59 156.21 0)
+			(at 102.87 48.26 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 102.87 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6612,245 +4379,109 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 275.59 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "2"
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c63")
+		)
+		(pin "4"
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d93")
 		)
 		(pin "1"
-			(uuid "84fef7ed-8074-47bb-ad7f-db28b56abf38")
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a7e")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f1111")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726ad4")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b0a8")
+		)
+		(instances
+			(project ""
+				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
+					(reference "S903")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 228.6 119.38 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d2f4999b-004d-421d-b4da-0b714965ad66")
+		(property "Reference" "S911"
+			(at 222.504 111.76 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "C3"
+			(at 221.742 125.73 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 228.6 119.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 119.38 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e63edfd6-0ead-480c-89a8-f3ad89a99f43")
+		)
+		(pin "4"
+			(uuid "31245a9a-b946-497e-ae10-c4ab315a56ae")
+		)
+		(pin "1"
+			(uuid "99061c0b-d405-4b31-81a2-5bab849817ab")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f1112")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726ad5")
+		)
+		(pin "3"
+			(uuid "0bd5e882-b510-49a5-a587-9ddbaddcdbb6")
 		)
 		(instances
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "#PWR0910")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 119.38 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d512d4f6-9ef6-4207-bd65-5168a42caddc")
-		(property "Reference" "SW908"
-			(at 119.38 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_B4"
-			(at 119.38 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 119.38 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 119.38 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a449ac2b-7930-415a-85fe-6452dc6bf921")
-		)
-		(pin "1"
-			(uuid "65bbb9bc-746b-4c1b-b697-55760ab86484")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW409")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW908")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 119.38 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d944da78-6396-4a32-8714-538a100bd5ae")
-		(property "Reference" "SW904"
-			(at 119.38 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_A4"
-			(at 119.38 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 119.38 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 119.38 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "57b76533-a55b-4707-b5b8-ce43e6160151")
-		)
-		(pin "1"
-			(uuid "54e967a0-fe75-4008-a44f-c62d36602648")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW405")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW904")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 68.58 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc1d487e-6147-414f-adb5-9062664b15b2")
-		(property "Reference" "SW913"
-			(at 68.58 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_D1"
-			(at 68.58 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 68.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 68.58 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "80976ea9-5c39-4286-8da6-f5d8ed4c9cdf")
-		)
-		(pin "1"
-			(uuid "2041a141-bcb8-47a2-a1f6-721cade32512")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW414")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW913")
-					(unit 1)
+					(reference "S911")
+					(unit 2)
 				)
 			)
 		)
@@ -6922,51 +4553,51 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 110.49 68.58 90)
-		(unit 1)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 228.6 93.98 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ed0eb4b2-83f8-4c99-8faa-fec8bc32a872")
-		(property "Reference" "R907"
-			(at 110.49 63.5 90)
+		(uuid "e710434c-6d45-44b2-be02-cebb983313ad")
+		(property "Reference" "S907"
+			(at 222.504 86.36 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.016 1.016)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "R_3"
-			(at 110.49 66.04 90)
+		(property "Value" "B3"
+			(at 222.25 100.584 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 110.49 68.58 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 228.6 93.98 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 110.49 68.58 0)
+		(property "Datasheet" ""
+			(at 228.6 93.98 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6975,72 +4606,78 @@
 			)
 		)
 		(pin "2"
-			(uuid "128c7078-8af9-4963-9b33-1ffd67b8f4b8")
+			(uuid "3406e754-6577-41fb-8bd8-2e15740c458a")
+		)
+		(pin "4"
+			(uuid "b6bad204-0fa0-4f4b-97a5-656869dca6cc")
 		)
 		(pin "1"
-			(uuid "016547c4-052c-47ce-b125-a504d566b261")
+			(uuid "f8681b6f-4534-410d-b949-7b49dff4f4c0")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f1113")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726ad6")
+		)
+		(pin "3"
+			(uuid "3a316040-04cb-432b-b09a-6ad8abf241c7")
 		)
 		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R407")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
+			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R907")
-					(unit 1)
+					(reference "S907")
+					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push_45deg")
-		(at 102.87 64.77 0)
+		(lib_id "BVH_Switches_Inputs:Tac_Switch_With_Addressable_LED")
+		(at 86.36 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eff12c71-8e26-4ccf-80d2-67b3a03c1383")
-		(property "Reference" "SW907"
-			(at 102.87 57.15 0)
+		(uuid "f080ce73-2e78-4cb3-9492-279e3903ffd6")
+		(property "Reference" "S902"
+			(at 86.36 40.64 0)
+			(do_not_autoplace yes)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Value" "SW_B3"
-			(at 102.87 59.69 0)
+		(property "Value" "A2"
+			(at 86.36 43.18 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
-			(at 102.87 64.77 0)
+		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm_SK6812-E-Mini"
+			(at 86.36 48.26 0)
 			(effects
 				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 102.87 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
-			(at 102.87 64.77 0)
+		(property "Datasheet" ""
+			(at 86.36 48.26 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 86.36 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7049,21 +4686,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "8d1d45be-3780-4776-b67a-9d4078bc3fb8")
+			(uuid "e8f0ed76-0e5b-45be-96d8-94a9ce178c64")
+		)
+		(pin "4"
+			(uuid "f4c5920d-eacc-4028-9b2f-40c5b8f64d94")
 		)
 		(pin "1"
-			(uuid "5e660d27-7b30-44b2-b934-058bb85ce2dd")
+			(uuid "d12bbee5-bd96-4a51-a804-71ca28aa8a7f")
+		)
+		(pin "5"
+			(uuid "68c20e99-8b94-4f36-bec4-f936984f1114")
+		)
+		(pin "6"
+			(uuid "130df419-3ede-479e-b7b4-6ac92d726ad7")
+		)
+		(pin "3"
+			(uuid "8f5d27fe-5eec-40f4-8c32-0ec71331b0a9")
 		)
 		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "SW408")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
+			(project ""
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "SW907")
+					(reference "S902")
 					(unit 1)
 				)
 			)
@@ -7130,80 +4773,6 @@
 			(project "minstro_combined_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
 					(reference "#PWR0907")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 110.49 101.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fdb0a9e8-aac8-4ddf-b986-d5197a12e8eb")
-		(property "Reference" "R915"
-			(at 110.49 96.52 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "R_3"
-			(at 110.49 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 110.49 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 110.49 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9876b6a8-2ca4-479c-98f9-2f08f7267432")
-		)
-		(pin "1"
-			(uuid "c2b41769-eb7d-4656-bb63-682dc743c471")
-		)
-		(instances
-			(project "hmi_board"
-				(path "/6e1e1d08-8a14-498a-9c8b-9e866526b98e/bf91a51e-2b31-424f-aa43-e76db244c75f"
-					(reference "R415")
-					(unit 1)
-				)
-			)
-			(project "hmi_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/cfb393c8-7347-49f3-a406-88d649743539"
-					(reference "R915")
 					(unit 1)
 				)
 			)

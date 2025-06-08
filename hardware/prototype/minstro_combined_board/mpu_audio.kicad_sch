@@ -3737,7 +3737,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "BVH_Switches:TacButton_6mm_6mm"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 106.68 25.908 90)
 			(effects
 				(font

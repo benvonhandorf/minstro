@@ -10071,10 +10071,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "40f0b68d-a005-4ceb-92e9-ab5a6c549dd7")
 		(property "Reference" "FB401"
-			(at 68.5419 30.48 90)
+			(at 68.58 33.528 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12027,7 +12026,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Antenna_Shield"
+		(property "Value" "ANT"
 			(at 60.96 164.4649 0)
 			(effects
 				(font
@@ -12036,7 +12035,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RF_Antenna:Texas_SWRA117D_2.4GHz_Right"
+		(property "Footprint" "BVH_RF_Ham:ANT2012LL13R2400A"
 			(at 57.15 161.29 0)
 			(effects
 				(font
