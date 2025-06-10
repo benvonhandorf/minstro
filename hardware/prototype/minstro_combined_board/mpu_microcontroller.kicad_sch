@@ -5283,16 +5283,6 @@
 		)
 		(uuid "1d88ae02-37a9-4840-8636-22e19e830d23")
 	)
-	(text "Resistor divider for mode selection\nUse with internal PU resistor\nInternal PU / PD Resistors are ~45k Ohm"
-		(exclude_from_sim no)
-		(at 263.652 51.562 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "28aa45a7-4d75-4d2f-be3b-94c9a2370c7d")
-	)
 	(text "I2C PU Resistors"
 		(exclude_from_sim no)
 		(at 158.75 172.212 0)
@@ -5557,16 +5547,16 @@
 		(uuid "411a1542-788b-486c-afdf-2b4dba127c5c")
 	)
 	(no_connect
+		(at 62.23 78.74)
+		(uuid "6c517685-7e9f-4002-9df3-8f8dedc224b6")
+	)
+	(no_connect
 		(at 107.95 88.9)
 		(uuid "72683a93-df5d-455b-9139-3b59e2e75cf2")
 	)
 	(no_connect
 		(at 107.95 91.44)
 		(uuid "a1aae72a-d2a4-4808-9692-c31d94baf057")
-	)
-	(no_connect
-		(at 210.82 133.35)
-		(uuid "a451afd6-c070-4fc2-b2e3-8746692fd961")
 	)
 	(no_connect
 		(at 210.82 137.16)
@@ -5577,8 +5567,16 @@
 		(uuid "b06b82e0-a638-47a5-99c4-673bb77c9e92")
 	)
 	(no_connect
+		(at 210.82 140.97)
+		(uuid "cea260e4-1131-4595-9fe4-b09e03c31ec4")
+	)
+	(no_connect
 		(at 259.08 149.86)
 		(uuid "ea841cf9-a544-4b5a-8f64-a0c1b359e28a")
+	)
+	(no_connect
+		(at 62.23 76.2)
+		(uuid "f1f02902-36da-466e-a4f7-9e516c79d899")
 	)
 	(no_connect
 		(at 236.22 157.48)
@@ -6126,16 +6124,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 73.66) (xy 62.23 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "563337b0-3246-4ad6-9d51-b0aa696244be")
-	)
-	(wire
-		(pts
 			(xy 38.1 113.03) (xy 38.1 114.3)
 		)
 		(stroke
@@ -6186,16 +6174,6 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 76.2) (xy 62.23 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b134814-b917-4dbe-b5c2-5c65b1afc6f4")
-	)
-	(wire
-		(pts
 			(xy 204.47 25.4) (xy 207.01 25.4)
 		)
 		(stroke
@@ -6213,16 +6191,6 @@
 			(type default)
 		)
 		(uuid "5c2df1a7-301a-4847-88d2-26056990b0f0")
-	)
-	(wire
-		(pts
-			(xy 208.28 140.97) (xy 210.82 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c3c817e-6adb-49e3-8d09-be4cd7bfa733")
 	)
 	(wire
 		(pts
@@ -6503,16 +6471,6 @@
 			(type default)
 		)
 		(uuid "81f3788e-7060-4d2a-8133-6b3d39b191e8")
-	)
-	(wire
-		(pts
-			(xy 57.15 78.74) (xy 62.23 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82999798-3bcf-4d17-9538-f7b295c1f8ef")
 	)
 	(wire
 		(pts
@@ -6876,16 +6834,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 40.64) (xy 266.7 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5ae7730-d0e6-4b54-a31f-abd0ca49fdbb")
-	)
-	(wire
-		(pts
 			(xy 95.25 21.59) (xy 101.6 21.59)
 		)
 		(stroke
@@ -7066,6 +7014,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 133.35) (xy 210.82 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be8ae80b-2e9e-4f6f-983d-db47d41a8303")
+	)
+	(wire
+		(pts
 			(xy 114.3 180.34) (xy 114.3 186.69)
 		)
 		(stroke
@@ -7106,16 +7064,6 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 33.02) (xy 266.7 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c28f22ec-f6b8-4ea6-bcee-368dfd7dd823")
-	)
-	(wire
-		(pts
 			(xy 200.66 160.02) (xy 204.47 160.02)
 		)
 		(stroke
@@ -7133,16 +7081,6 @@
 			(type default)
 		)
 		(uuid "c4221950-1990-4196-8344-c4412f6a584d")
-	)
-	(wire
-		(pts
-			(xy 266.7 33.02) (xy 269.24 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c428f7b9-29fd-494b-b04f-6a010b85ede5")
 	)
 	(wire
 		(pts
@@ -7724,16 +7662,6 @@
 		)
 		(uuid "5820f3cb-ecbd-4757-b16d-da7091199a46")
 	)
-	(label "MODE_SEL"
-		(at 269.24 33.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5a94a743-8b13-4098-a5bd-a60ced5e247c")
-	)
 	(label "SD_DAT2"
 		(at 157.48 137.16 180)
 		(effects
@@ -7845,7 +7773,7 @@
 		(uuid "7a297558-16bb-4dd6-bec8-ca1571f6cd6b")
 	)
 	(label "USB_P"
-		(at 208.28 140.97 180)
+		(at 208.28 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7883,16 +7811,6 @@
 			(justify left bottom)
 		)
 		(uuid "8207939d-3219-4a2f-bda0-d1b163572dd8")
-	)
-	(label "MODE_SEL"
-		(at 57.15 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "89235268-5d5d-4947-9014-c0134ee39312")
 	)
 	(label "SPIFLASH_HD"
 		(at 196.85 107.95 180)
@@ -8195,7 +8113,7 @@
 		(uuid "fa3e9dd9-3d2d-4362-8d49-e47c9b2e9753")
 	)
 	(label "USB_N"
-		(at 208.28 144.78 180)
+		(at 208.28 133.35 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8260,7 +8178,7 @@
 	)
 	(hierarchical_label "PWR_CHRG"
 		(shape input)
-		(at 114.3 101.6 0)
+		(at 114.3 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8271,7 +8189,7 @@
 	)
 	(hierarchical_label "PWR_EXT"
 		(shape input)
-		(at 114.3 104.14 0)
+		(at 114.3 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8304,12 +8222,12 @@
 	)
 	(hierarchical_label "HMI_INT"
 		(shape input)
-		(at 57.15 78.74 180)
+		(at 114.3 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "568b03ae-9566-45a4-8f1d-c8fc8e3e37e4")
 	)
@@ -8447,12 +8365,12 @@
 	)
 	(hierarchical_label "HMI_WAKE"
 		(shape input)
-		(at 57.15 76.2 180)
+		(at 114.3 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "e7c22a70-cddf-406a-9601-d9034ac5c0f1")
 	)
@@ -10179,78 +10097,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 266.7 41.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6436b507-d1f0-4cbb-bcad-8a907ab532dc")
-		(property "Reference" "#PWR0406"
-			(at 266.7 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 266.7 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 266.7 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 266.7 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 266.7 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "41f3521f-368f-452a-a455-2a5f4f400cc0")
-		)
-		(instances
-			(project "display_board"
-				(path "/abd7db12-40ec-457f-8963-ac0fca439f58/d92400af-2c99-4541-b0b5-3364e61cbf07"
-					(reference "#PWR0306")
-					(unit 1)
-				)
-			)
-			(project "display_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/f8b73dba-3bd2-4715-a78c-fbce9d68ac6b"
-					(reference "#PWR0406")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 35.56 39.37 0)
 		(unit 1)
@@ -10619,82 +10465,6 @@
 			(project "display_board"
 				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/f8b73dba-3bd2-4715-a78c-fbce9d68ac6b"
 					(reference "C409")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 266.7 38.1 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7952a1a5-a6a1-4602-bad3-62cabd668abb")
-		(property "Reference" "R403"
-			(at 269.24 36.8299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100k"
-			(at 269.24 39.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 266.7 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 266.7 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 266.7 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bc7e4b64-9432-44d6-8644-b9175fbbbbb9")
-		)
-		(pin "2"
-			(uuid "a66087ea-4f17-4d22-8a06-06055c5eb097")
-		)
-		(instances
-			(project "display_board"
-				(path "/abd7db12-40ec-457f-8963-ac0fca439f58/d92400af-2c99-4541-b0b5-3364e61cbf07"
-					(reference "R303")
-					(unit 1)
-				)
-			)
-			(project "display_board"
-				(path "/edc2d64f-9cdb-4ab0-b2de-c3cfa55e1c10/f8b73dba-3bd2-4715-a78c-fbce9d68ac6b"
-					(reference "R403")
 					(unit 1)
 				)
 			)
@@ -13509,7 +13279,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4085"
+		(property "Footprint" "BVH_Connectors_Misc:USB_C_Receptacle_GCT_USB4085_PinPaste"
 			(at 247.65 134.62 0)
 			(effects
 				(font

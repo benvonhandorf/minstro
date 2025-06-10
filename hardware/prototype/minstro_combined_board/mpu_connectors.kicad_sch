@@ -76,7 +76,7 @@
 			(symbol "FT6236_Conn_01x06_1_1"
 				(rectangle
 					(start -1.27 6.35)
-					(end 1.27 -8.89)
+					(end 6.35 -8.89)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -149,14 +149,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(text "TODO: Validate Pin Numbering against connector"
-					(at 6.604 0 900)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
 					)
 				)
 				(pin passive line
@@ -260,6 +252,24 @@
 						)
 					)
 					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 -11.43 90)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1510,6 +1520,24 @@
 						)
 					)
 				)
+				(pin no_connect line
+					(at 11.43 -54.61 90)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -1584,7 +1612,7 @@
 			(symbol "ST7789_Conn_01x12_1_1"
 				(rectangle
 					(start -1.27 13.97)
-					(end 1.27 -16.51)
+					(end 8.89 -16.51)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1723,14 +1751,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(text "TODO: Validate Pin Numbering against connector"
-					(at 11.43 0 900)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
 					)
 				)
 				(pin passive line
@@ -1942,6 +1962,24 @@
 						)
 					)
 					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 6.35 -19.05 90)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4125,7 +4163,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ST7789_Conn_01x12"
+		(property "Value" "ST7789"
 			(at 82.55 87.6299 0)
 			(effects
 				(font
@@ -4196,6 +4234,9 @@
 		)
 		(pin "11"
 			(uuid "7dec5303-048b-4c2e-9ed0-1c2fc32bfaa6")
+		)
+		(pin "MP"
+			(uuid "7d284b24-bdde-4771-a897-0b88d9ac10bb")
 		)
 		(instances
 			(project ""
@@ -4302,7 +4343,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ILI9488_Conn"
+		(property "Value" "ILI9488"
 			(at 152.654 130.81 0)
 			(effects
 				(font
@@ -4458,6 +4499,9 @@
 		(pin "37"
 			(uuid "df4267bf-7570-4dfc-92d9-7a222a200beb")
 		)
+		(pin "MP"
+			(uuid "edf1eca3-1d69-4e45-8948-8629be3aac2f")
+		)
 		(instances
 			(project ""
 				(path "/abd7db12-40ec-457f-8963-ac0fca439f58/7e333f68-04b8-45b1-8562-3824621fc04d"
@@ -4568,7 +4612,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "FT6236_Conn_01x06"
+		(property "Value" "FT6236"
 			(at 208.28 76.1999 0)
 			(effects
 				(font
@@ -4621,6 +4665,9 @@
 		)
 		(pin "6"
 			(uuid "c298da67-3634-442b-ba39-c36a9a1241c3")
+		)
+		(pin "MP"
+			(uuid "32d170a8-8856-497c-a37a-3a22ecca83b0")
 		)
 		(instances
 			(project ""
