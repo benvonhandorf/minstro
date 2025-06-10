@@ -1064,7 +1064,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
+		(property "Footprint" "BVH_PinHeader_FrictionRetention:PinHeader_1x06_P2.54mm_Vertical"
 			(at 49.53 82.55 0)
 			(effects
 				(font
