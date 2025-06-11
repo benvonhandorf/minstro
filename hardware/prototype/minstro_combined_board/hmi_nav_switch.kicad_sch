@@ -262,7 +262,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x10"
+		(symbol "Connector_Generic_MountingPin:Conn_01x10_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -278,12 +278,13 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x10"
-				(at 0 -15.24 0)
+			(property "Value" "Conn_01x10_MountingPin"
+				(at 1.27 -15.24 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -304,7 +305,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connectable mounting pin connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -322,7 +323,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -331,7 +332,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x10_1_1"
+			(symbol "Conn_01x10_MountingPin_1_1"
 				(rectangle
 					(start -1.27 11.43)
 					(end 1.27 -13.97)
@@ -451,6 +452,26 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -14.732) (xy 1.016 -14.732)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at 0 -14.351 0)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
 					)
 				)
 				(pin passive line
@@ -626,6 +647,24 @@
 						)
 					)
 					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -17.78 90)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -910,6 +949,10 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f5ae8796-05cb-4af5-83ca-67169653d5cc")
+	)
+	(no_connect
+		(at 96.52 60.96)
+		(uuid "dd3128d4-4493-498c-831d-e7d144b5a1bf")
 	)
 	(wire
 		(pts
@@ -1331,6 +1374,46 @@
 		)
 		(uuid "ff2792af-6631-4fdd-88e4-8f1da56ec9c7")
 	)
+	(label "Nav_Right_VD"
+		(at 64.77 106.68 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d760332-87a3-4a32-968c-0028c13f9d78")
+	)
+	(label "Nav_Up_VD"
+		(at 73.66 106.68 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c5e5fe7-d7a8-43a7-8add-07f9c67a19e6")
+	)
+	(label "Nav_Down_VD"
+		(at 55.88 106.68 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c8b39ef-da7c-4622-8896-6e04a61334a9")
+	)
+	(label "Nav_Left_VD"
+		(at 82.55 106.68 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2df7cdf-f7b2-482f-9ddb-e91c1b358a85")
+	)
 	(hierarchical_label "NAV_SW"
 		(shape input)
 		(at 86.36 66.04 180)
@@ -1485,7 +1568,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x10")
+		(lib_id "Connector_Generic_MountingPin:Conn_01x10_MountingPin")
 		(at 96.52 78.74 0)
 		(mirror x)
 		(unit 1)
@@ -1496,11 +1579,12 @@
 		(fields_autoplaced yes)
 		(uuid "09b89af6-6b03-4be6-b59f-5086a78291cf")
 		(property "Reference" "J801"
-			(at 96.52 59.69 0)
+			(at 99.06 77.1143 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "NAV CONN"
@@ -1512,7 +1596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "BVH_PinHeader_FrictionRetention:PinHeader_1x10_P2.54mm_Vertical"
+		(property "Footprint" "BVH_Connectors_Misc:Anchored_Offset_PinHeader_1x10_P2.54mm_Vertical_M2.5"
 			(at 96.52 78.74 0)
 			(effects
 				(font
@@ -1530,7 +1614,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 96.52 78.74 0)
 			(effects
 				(font
@@ -1568,6 +1652,9 @@
 		)
 		(pin "6"
 			(uuid "8afb8840-75da-4e65-a242-bc1a04ac0dde")
+		)
+		(pin "MP"
+			(uuid "010265c2-2fff-47b1-8b41-4b99d3cb25b5")
 		)
 		(instances
 			(project "minstro_combined_board"
