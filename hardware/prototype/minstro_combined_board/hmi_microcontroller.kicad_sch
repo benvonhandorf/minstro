@@ -74,8 +74,8 @@
 			)
 			(symbol "ATSAMD10D13A-M_0_1"
 				(rectangle
-					(start -10.16 22.86)
-					(end 10.16 -22.86)
+					(start -13.97 22.86)
+					(end 13.97 -22.86)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -86,8 +86,28 @@
 				)
 			)
 			(symbol "ATSAMD10D13A-M_1_1"
+				(polyline
+					(pts
+						(xy 8.89 21.59) (xy 2.54 21.59) (xy 2.54 6.35) (xy 8.89 6.35)
+					)
+					(stroke
+						(width 0)
+						(type dash)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "ADC Capable"
+					(at 3.81 13.97 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 				(pin bidirectional line
-					(at -12.7 15.24 0)
+					(at -16.51 15.24 0)
 					(length 2.54)
 					(name "PA28/~{RST}"
 						(effects
@@ -105,7 +125,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -12.7 10.16 0)
+					(at -16.51 10.16 0)
 					(length 2.54)
 					(name "PA30/SWCLK"
 						(effects
@@ -123,7 +143,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -12.7 7.62 0)
+					(at -16.51 7.62 0)
 					(length 2.54)
 					(name "PA31/SWDIO"
 						(effects
@@ -141,7 +161,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -12.7 2.54 0)
+					(at -16.51 2.54 0)
 					(length 2.54)
 					(name "PA08/XIN"
 						(effects
@@ -159,7 +179,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at -12.7 0 0)
+					(at -16.51 0 0)
 					(length 2.54)
 					(name "PA09/XOUT"
 						(effects
@@ -232,7 +252,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 20.32 180)
+					(at 16.51 20.32 180)
 					(length 2.54)
 					(name "PA02"
 						(effects
@@ -250,7 +270,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 17.78 180)
+					(at 16.51 17.78 180)
 					(length 2.54)
 					(name "PA03"
 						(effects
@@ -268,7 +288,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 15.24 180)
+					(at 16.51 15.24 180)
 					(length 2.54)
 					(name "PA04"
 						(effects
@@ -286,7 +306,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 12.7 180)
+					(at 16.51 12.7 180)
 					(length 2.54)
 					(name "PA05"
 						(effects
@@ -304,7 +324,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 10.16 180)
+					(at 16.51 10.16 180)
 					(length 2.54)
 					(name "PA06"
 						(effects
@@ -322,7 +342,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 7.62 180)
+					(at 16.51 7.62 180)
 					(length 2.54)
 					(name "PA07"
 						(effects
@@ -340,7 +360,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 5.08 180)
+					(at 16.51 5.08 180)
 					(length 2.54)
 					(name "PA10"
 						(effects
@@ -358,7 +378,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 2.54 180)
+					(at 16.51 2.54 180)
 					(length 2.54)
 					(name "PA11"
 						(effects
@@ -376,7 +396,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 0 180)
+					(at 16.51 0 180)
 					(length 2.54)
 					(name "PA14"
 						(effects
@@ -394,7 +414,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -2.54 180)
+					(at 16.51 -2.54 180)
 					(length 2.54)
 					(name "PA15"
 						(effects
@@ -412,7 +432,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -5.08 180)
+					(at 16.51 -5.08 180)
 					(length 2.54)
 					(name "PA16"
 						(effects
@@ -430,7 +450,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -7.62 180)
+					(at 16.51 -7.62 180)
 					(length 2.54)
 					(name "PA17"
 						(effects
@@ -448,7 +468,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -10.16 180)
+					(at 16.51 -10.16 180)
 					(length 2.54)
 					(name "PA22"
 						(effects
@@ -466,7 +486,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -12.7 180)
+					(at 16.51 -12.7 180)
 					(length 2.54)
 					(name "PA23"
 						(effects
@@ -484,7 +504,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -15.24 180)
+					(at 16.51 -15.24 180)
 					(length 2.54)
 					(name "PA24"
 						(effects
@@ -502,7 +522,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -17.78 180)
+					(at 16.51 -17.78 180)
 					(length 2.54)
 					(name "PA25"
 						(effects
@@ -520,7 +540,7 @@
 					)
 				)
 				(pin bidirectional line
-					(at 12.7 -20.32 180)
+					(at 16.51 -20.32 180)
 					(length 2.54)
 					(name "PA27"
 						(effects
@@ -1893,10 +1913,6 @@
 		(uuid "5b3d8357-afc4-4dbc-8ec6-7cbad98a2ac9")
 	)
 	(no_connect
-		(at 121.92 86.36)
-		(uuid "a3a9be0a-c3f6-450c-a872-f6befeb8cdcf")
-	)
-	(no_connect
 		(at 184.15 67.31)
 		(uuid "f3e60677-975b-45e1-84fb-0d7846ad8015")
 	)
@@ -1912,7 +1928,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 99.06) (xy 96.52 99.06)
+			(xy 87.63 99.06) (xy 92.71 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1932,7 +1948,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 101.6) (xy 96.52 101.6)
+			(xy 87.63 101.6) (xy 92.71 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1962,7 +1978,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 119.38) (xy 127 119.38)
+			(xy 125.73 119.38) (xy 130.81 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1992,7 +2008,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 106.68) (xy 127 106.68)
+			(xy 125.73 106.68) (xy 130.81 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2002,7 +2018,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 99.06) (xy 127 99.06)
+			(xy 125.73 99.06) (xy 130.81 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2022,7 +2038,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 91.44) (xy 96.52 91.44)
+			(xy 87.63 91.44) (xy 92.71 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2042,7 +2058,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 93.98) (xy 96.52 93.98)
+			(xy 87.63 93.98) (xy 92.71 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2102,7 +2118,17 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 83.82) (xy 127 83.82)
+			(xy 125.73 86.36) (xy 130.81 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "638b59cb-e964-4b37-b6d6-7ddd4dabe481")
+	)
+	(wire
+		(pts
+			(xy 125.73 83.82) (xy 130.81 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2112,7 +2138,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 116.84) (xy 127 116.84)
+			(xy 125.73 116.84) (xy 130.81 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2122,7 +2148,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 96.52) (xy 127 96.52)
+			(xy 125.73 96.52) (xy 130.81 96.52)
 		)
 		(stroke
 			(width 0)
@@ -2152,7 +2178,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 109.22) (xy 127 109.22)
+			(xy 125.73 109.22) (xy 130.81 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2202,7 +2228,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 91.44) (xy 127 91.44)
+			(xy 125.73 91.44) (xy 130.81 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2232,7 +2258,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 104.14) (xy 127 104.14)
+			(xy 125.73 104.14) (xy 130.81 104.14)
 		)
 		(stroke
 			(width 0)
@@ -2242,7 +2268,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 101.6) (xy 127 101.6)
+			(xy 125.73 101.6) (xy 130.81 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2252,7 +2278,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 88.9) (xy 127 88.9)
+			(xy 125.73 88.9) (xy 130.81 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2292,7 +2318,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 86.36) (xy 96.52 86.36)
+			(xy 87.63 86.36) (xy 92.71 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2332,7 +2358,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 121.92) (xy 127 121.92)
+			(xy 125.73 121.92) (xy 130.81 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2362,7 +2388,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 93.98) (xy 127 93.98)
+			(xy 125.73 93.98) (xy 130.81 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2372,7 +2398,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 81.28) (xy 127 81.28)
+			(xy 125.73 81.28) (xy 130.81 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2392,7 +2418,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 114.3) (xy 127 114.3)
+			(xy 125.73 114.3) (xy 130.81 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2402,7 +2428,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 111.76) (xy 127 111.76)
+			(xy 125.73 111.76) (xy 130.81 111.76)
 		)
 		(stroke
 			(width 0)
@@ -2421,7 +2447,7 @@
 		(uuid "f143e822-5b0f-4ed2-8b03-5169399dbcad")
 	)
 	(label "SWDIO"
-		(at 91.44 93.98 180)
+		(at 87.63 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2431,7 +2457,7 @@
 		(uuid "0e9b2799-cb11-4572-9f52-27a418e97eca")
 	)
 	(label "SWCLK"
-		(at 91.44 91.44 180)
+		(at 87.63 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2461,7 +2487,7 @@
 		(uuid "6ddf21f2-4e78-4c0a-8510-f20c5823ff76")
 	)
 	(label "~{RST}"
-		(at 91.44 86.36 180)
+		(at 87.63 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2471,12 +2497,12 @@
 		(uuid "6e00fca7-5a85-445f-92b3-080f7835f37f")
 	)
 	(label "RGB_DATA_3.3"
-		(at 91.44 101.6 180)
+		(at 130.81 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "8026a36e-5a4a-4a6f-8245-7247f58a74f4")
 	)
@@ -2523,7 +2549,7 @@
 	)
 	(hierarchical_label "ROW_B"
 		(shape input)
-		(at 127 83.82 0)
+		(at 130.81 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2534,7 +2560,7 @@
 	)
 	(hierarchical_label "WAKE"
 		(shape input)
-		(at 127 119.38 0)
+		(at 130.81 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2545,7 +2571,7 @@
 	)
 	(hierarchical_label "VFO_B"
 		(shape input)
-		(at 127 104.14 0)
+		(at 130.81 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2556,7 +2582,7 @@
 	)
 	(hierarchical_label "SCL"
 		(shape input)
-		(at 127 114.3 0)
+		(at 130.81 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2567,7 +2593,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape input)
-		(at 127 111.76 0)
+		(at 130.81 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2578,7 +2604,7 @@
 	)
 	(hierarchical_label "INT"
 		(shape input)
-		(at 127 116.84 0)
+		(at 130.81 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2589,7 +2615,7 @@
 	)
 	(hierarchical_label "VFO_A"
 		(shape input)
-		(at 127 101.6 0)
+		(at 130.81 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2600,7 +2626,7 @@
 	)
 	(hierarchical_label "NAV_A"
 		(shape input)
-		(at 127 93.98 0)
+		(at 130.81 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2611,7 +2637,7 @@
 	)
 	(hierarchical_label "VFO_ADJ_B"
 		(shape input)
-		(at 127 109.22 0)
+		(at 130.81 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2622,7 +2648,7 @@
 	)
 	(hierarchical_label "POW_SW"
 		(shape input)
-		(at 127 121.92 0)
+		(at 130.81 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2633,7 +2659,7 @@
 	)
 	(hierarchical_label "ROW_C"
 		(shape input)
-		(at 127 81.28 0)
+		(at 130.81 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2644,7 +2670,7 @@
 	)
 	(hierarchical_label "NAV_B"
 		(shape input)
-		(at 127 96.52 0)
+		(at 130.81 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2655,7 +2681,7 @@
 	)
 	(hierarchical_label "NAV_DIR"
 		(shape input)
-		(at 127 91.44 0)
+		(at 130.81 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2666,7 +2692,7 @@
 	)
 	(hierarchical_label "ROW_A"
 		(shape input)
-		(at 127 88.9 0)
+		(at 130.81 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2677,7 +2703,7 @@
 	)
 	(hierarchical_label "VFO_SW"
 		(shape input)
-		(at 91.44 99.06 180)
+		(at 87.63 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2688,7 +2714,7 @@
 	)
 	(hierarchical_label "VFO_ADJ_A"
 		(shape input)
-		(at 127 106.68 0)
+		(at 130.81 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2699,7 +2725,7 @@
 	)
 	(hierarchical_label "NAV_SW"
 		(shape input)
-		(at 127 99.06 0)
+		(at 130.81 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
