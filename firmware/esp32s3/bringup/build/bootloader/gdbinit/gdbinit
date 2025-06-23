@@ -1,0 +1,2 @@
+source /home/benvh/projects/minstro/firmware/esp32s3/bringup/build/bootloader/gdbinit/symbols
+source /home/benvh/projects/minstro/firmware/esp32s3/bringup/build/bootloader/gdbinit/connect

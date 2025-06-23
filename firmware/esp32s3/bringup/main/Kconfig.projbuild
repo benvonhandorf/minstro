@@ -1,0 +1,179 @@
+menu "Bringup Configuration"
+
+    orsource "$IDF_PATH/examples/common_components/env_caps/$IDF_TARGET/Kconfig.env_caps"
+
+    config LED_TEST
+        bool "Test a LED"
+        default NO
+
+    menu "LED Test"
+        depends on LED_TEST
+
+        help
+            This example blinks a LED on the board. The LED can be a GPIO controlled LED or an addressable LED strip.
+            The default selection is based on the Espressif DevKit boards.
+            You can change the default selection according to your board.
+
+        choice BLINK_LED
+            prompt "Blink LED type"
+            default BLINK_LED_GPIO
+            help
+                Select the LED type. A normal level controlled LED or an addressable LED strip.
+                The default selection is based on the Espressif DevKit boards.
+                You can change the default selection according to your board.
+
+            config BLINK_LED_GPIO
+                bool "GPIO"
+            config BLINK_LED_STRIP
+                bool "LED strip"
+        endchoice
+
+        choice BLINK_LED_STRIP_BACKEND
+            depends on BLINK_LED_STRIP
+            prompt "LED strip backend peripheral"
+            default BLINK_LED_STRIP_BACKEND_RMT if SOC_RMT_SUPPORTED
+            default BLINK_LED_STRIP_BACKEND_SPI
+            help
+                Select the backend peripheral to drive the LED strip.
+
+            config BLINK_LED_STRIP_BACKEND_RMT
+                depends on SOC_RMT_SUPPORTED
+                bool "RMT"
+            config BLINK_LED_STRIP_BACKEND_SPI
+                bool "SPI"
+        endchoice
+
+        config BLINK_GPIO
+            int "Blink GPIO number"
+            range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+            default 8
+            help
+                GPIO number (IOxx) to blink on and off the LED.
+                Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.
+
+        config BLINK_PERIOD
+            int "Blink period in ms"
+            range 10 3600000
+            default 1000
+            help
+                Define the blinking period in milliseconds.
+    endmenu
+
+    config I2C_TEST
+        bool "Scan I2C Bus"
+
+    menu "I2C Test"
+        depends on I2C_TEST
+
+        help
+            Scan an I2C bus for devices.
+
+        config I2C_SCL_PIN
+            int "SCL GPIO number"
+            range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+            default 7
+            help
+                GPIO number (IOxx) connected to the SCL/SCK line of the I2C bus.
+
+        config I2C_SDA_PIN
+            int "SDA GPIO number"
+            range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+            default 6
+            help
+                GPIO number (IOxx) connected to the SDA line of the I2C bus.
+
+        config I2C_ENABLE_PULLUP
+            bool "Enable pullup resistors"
+            default n
+            help
+                Enable pullup resistors on the I2C bus.
+                This is required for the I2C bus to work properly.
+                If you are using a board with pullup resistors already, you can disable this option.
+
+        config I2C_SPEED
+            int "I2C bus speed in kHz"
+            range 10 1000
+            default 100
+            help
+                Define the I2C bus speed in kHz.
+                The default value is 100 kHz.
+                The maximum value is 1 MHz.
+
+        config I2C_RESCAN_DELAY_S
+            int "Rescan frequency in seconds"
+            range 1 10000
+            default 1000
+            help
+                Define the delay between scans in seconds.
+                The default value is 1000 s.
+
+    endmenu
+
+    config WIFI_TEST
+        bool "Test WiFi networks and report RSSI"
+
+    menu "WiFi Test"
+        depends on WIFI_TEST
+
+        help
+            Test WiFi Functionality.
+
+        choice WIFI_TEST_MODE
+            prompt "WiFi test mode"
+            default WIFI_TEST_MODE_SCAN
+            help
+                Select the WiFi test mode. Scan for networks or connect to a network.
+
+            config WIFI_TEST_MODE_SCAN
+                bool "Scan"
+            config WIFI_TEST_MODE_CONNECT
+                bool "Connect"
+        endchoice
+
+        menu "Scan Configuration"
+            depends on WIFI_TEST_MODE_SCAN
+
+            help
+                Scan for WiFi networks and report the RSSI of the networks.
+                This is useful to test the WiFi functionality of the board.
+
+            config WIFI_TEST_SCAN_DELAY_S
+                int "Scan delay in seconds"
+                range 1 10000
+                default 10
+                help
+                    Define the delay between scans in seconds.
+                    The default value is 10 s.
+
+        endmenu
+
+        menu "WiFi Connect"
+            depends on WIFI_TEST_MODE_CONNECT
+
+            help
+                Connect to a WiFi network and report the RSSI of the connected network.
+                This is useful to test the WiFi functionality of the board.
+
+            config WIFI_TEST_CONNECT_SSID
+                string "WiFi SSID"
+                default "ESP32"
+                help
+                    WiFi SSID to connect to.
+
+            config WIFI_TEST_CONNECT_PASSWORD
+                string "WiFi Password"
+                default "123456789"
+                help
+                    WiFi password to connect to the network.
+            
+
+            config WIFI_TEST_IPERF
+                bool "Run iperf server"
+                default n
+                help
+                    Run an iperf server to test the WiFi throughput.
+                    This is useful to test the WiFi functionality of the board.
+        endmenu
+
+    endmenu
+endmenu

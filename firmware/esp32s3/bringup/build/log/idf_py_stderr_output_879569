@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfgen/__main__.py", line 18, in <module>
+    main()
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfgen/core.py", line 717, in main
+    config = kconfiglib.Kconfig(args.kconfig, parser_version=parser_version)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 920, in __init__
+    self()
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 934, in __call__
+    prev = self._parse_block(None, self.top_node, self.top_node)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2581, in _parse_block
+    prev = self._parse_block(None, parent, prev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2581, in _parse_block
+    prev = self._parse_block(None, parent, prev)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2618, in _parse_block
+    self._parse_block(_T_ENDMENU, node, node)
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2618, in _parse_block
+    self._parse_block(_T_ENDMENU, node, node)
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2618, in _parse_block
+    self._parse_block(_T_ENDMENU, node, node)
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 2677, in _parse_block
+    self._parse_error(
+  File "/home/benvh/.espressif/python_env/idf5.4_py3.12_env/lib/python3.12/site-packages/kconfiglib/core.py", line 3415, in _parse_error
+    raise KconfigError(
+kconfiglib.core.KconfigError: /home/benvh/projects/minstro/firmware/esp32s3/bringup/main/Kconfig.projbuild:148: error: couldn't parse 'endchoice': no corresponding 'choice'
+CMake Error at /home/benvh/esp/v5.4.1/esp-idf/tools/cmake/kconfig.cmake:209 (message):
+  Failed to run kconfgen
+  (/home/benvh/.espressif/python_env/idf5.4_py3.12_env/bin/python;-m;kconfgen;--list-separator=semicolon;--kconfig;/home/benvh/esp/v5.4.1/esp-idf/Kconfig;--sdkconfig-rename;/home/benvh/esp/v5.4.1/esp-idf/sdkconfig.rename;--config;/home/benvh/projects/minstro/firmware/esp32s3/bringup/sdkconfig;--defaults;/home/benvh/projects/minstro/firmware/esp32s3/bringup/sdkconfig.defaults;--defaults;/home/benvh/projects/minstro/firmware/esp32s3/bringup/sdkconfig.defaults.esp32s3;--env-file;/home/benvh/projects/minstro/firmware/esp32s3/bringup/build/config.env).
+  Error 1
+Call Stack (most recent call first):
+  /home/benvh/esp/v5.4.1/esp-idf/tools/cmake/build.cmake:681 (__kconfig_generate_config)
+  /home/benvh/esp/v5.4.1/esp-idf/tools/cmake/project.cmake:717 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
