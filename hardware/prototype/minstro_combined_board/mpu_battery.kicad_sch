@@ -1345,6 +1345,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Configuration Resistor Calculations:\n\nRiset = 0.25A = 3k5\nRilm = 0.1A = 15k5 - DNP when EN pins are 1,0\nRterm = 2k9 or DNP for default\nRtmr = 6.5hr max charge time = 46k4"
+		(exclude_from_sim no)
+		(at 138.176 124.968 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2ec752b0-dffa-409f-ad3b-e2878af12a5e")
+	)
 	(text "JST-PH 2.0\nRight Angle Connector"
 		(exclude_from_sim no)
 		(at 254.254 58.42 0)
@@ -2121,7 +2132,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "Rilm"
 			(at 111.76 95.25 90)
 			(effects
 				(font
@@ -2415,7 +2426,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "Riset"
 			(at 111.76 102.87 90)
 			(effects
 				(font
@@ -2561,7 +2572,7 @@
 				)
 			)
 		)
-		(property "Value" "R_Small"
+		(property "Value" "Rterm"
 			(at 111.76 77.47 90)
 			(effects
 				(font

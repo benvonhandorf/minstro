@@ -2,4 +2,4 @@
 target = "thumbv6m-none-eabi"
 
 [target.thumbv6m-none-eabi]
-runner = 'probe-run --chip ATSAMD10D13AM'
+runner = 'probe-rs run --chip ATSAMD10D13AM'

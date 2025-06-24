@@ -124,7 +124,7 @@ hal::bsp_pins! {
 /// I2C pads for the labelled I2C peripheral
 ///
 /// You can use these pads with other, user-defined [`i2c::Config`]urations.
-pub type I2cPads = i2c::Pads<Sercom1, Scl, Sda>;
+pub type I2cPads = i2c::Pads<Sercom1, Sda, Scl>;
 
 /// I2C master for the labelled I2C peripheral
 ///
