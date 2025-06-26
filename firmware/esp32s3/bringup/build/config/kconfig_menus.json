@@ -6517,10 +6517,7 @@
                                 "help": "GPIO number (IOxx) to blink on and off the LED.\nSome GPIOs are used for other purposes (flash connections, etc.) and cannot be used to blink.",
                                 "id": "BLINK_GPIO",
                                 "name": "BLINK_GPIO",
-                                "range": [
-                                    0,
-                                    48
-                                ],
+                                "range": null,
                                 "title": "Blink GPIO number",
                                 "type": "int"
                             },
@@ -6530,10 +6527,7 @@
                                 "help": "Define the blinking period in milliseconds.",
                                 "id": "BLINK_PERIOD",
                                 "name": "BLINK_PERIOD",
-                                "range": [
-                                    10,
-                                    3600000
-                                ],
+                                "range": null,
                                 "title": "Blink period in ms",
                                 "type": "int"
                             }
@@ -6736,6 +6730,155 @@
                 "name": "WIFI_TEST",
                 "range": null,
                 "title": "Test WiFi networks and report RSSI",
+                "type": "bool"
+            },
+            {
+                "children": [
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice SDCARD_TEST_MODE>",
+                                        "help": null,
+                                        "id": "SDCARD_TEST_MODE_SPI",
+                                        "name": "SDCARD_TEST_MODE_SPI",
+                                        "range": null,
+                                        "title": "SPI Mode",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice SDCARD_TEST_MODE>",
+                                        "help": null,
+                                        "id": "SDCARD_TEST_MODE_SDMMC",
+                                        "name": "SDCARD_TEST_MODE_SDMMC",
+                                        "range": null,
+                                        "title": "SDMMC Mode",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "SDCARD_TEST",
+                                "help": "Select the SD card access mode",
+                                "id": "bringup-configuration-test-basic-sd-card-operations-sd-card-settings-sd-card-test-mode",
+                                "name": "SDCARD_TEST_MODE",
+                                "title": "SD Card Test Mode",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SDCARD_TEST",
+                                "help": "SD card clock pin",
+                                "id": "SDCARD_TEST_SCK_PIN",
+                                "name": "SDCARD_TEST_SCK_PIN",
+                                "range": null,
+                                "title": "SCK Pin",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SDCARD_TEST",
+                                "help": "SD card detect pin",
+                                "id": "SDCARD_TEST_CD_PIN",
+                                "name": "SDCARD_TEST_CD_PIN",
+                                "range": null,
+                                "title": "Card Detect Pin",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SDCARD_TEST_MODE_SDMMC && SDCARD_TEST",
+                                "help": "SD card DAT0 pin",
+                                "id": "SDCARD_TEST_DAT0_PIN",
+                                "name": "SDCARD_TEST_DAT0_PIN",
+                                "range": null,
+                                "title": "DAT0 Pin",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SDCARD_TEST_MODE_SDMMC && SDCARD_TEST",
+                                "help": "SD card DAT1 pin",
+                                "id": "SDCARD_TEST_DAT1_PIN",
+                                "name": "SDCARD_TEST_DAT1_PIN",
+                                "range": null,
+                                "title": "DAT1 Pin",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SDCARD_TEST_MODE_SDMMC && SDCARD_TEST",
+                                "help": "SD card DAT2 pin",
+                                "id": "SDCARD_TEST_DAT2_PIN",
+                                "name": "SDCARD_TEST_DAT2_PIN",
+                                "range": null,
+                                "title": "DAT2 Pin",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SDCARD_TEST_MODE_SDMMC && SDCARD_TEST",
+                                "help": "SD card DAT3 pin",
+                                "id": "SDCARD_TEST_DAT3_PIN",
+                                "name": "SDCARD_TEST_DAT3_PIN",
+                                "range": null,
+                                "title": "DAT3 Pin",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SDCARD_TEST_MODE_SDMMC && SDCARD_TEST",
+                                "help": "SD card CMD pin",
+                                "id": "SDCARD_TEST_CMD_PIN",
+                                "name": "SDCARD_TEST_CMD_PIN",
+                                "range": null,
+                                "title": "CMD Pin",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SDCARD_TEST_MODE_SPI && SDCARD_TEST",
+                                "help": "SD card MOSI pin",
+                                "id": "SDCARD_TEST_MOSI_PIN",
+                                "name": "SDCARD_TEST_MOSI_PIN",
+                                "range": null,
+                                "title": "MOSI Pin",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SDCARD_TEST_MODE_SPI && SDCARD_TEST",
+                                "help": "SD card MISO pin",
+                                "id": "SDCARD_TEST_MISO_PIN",
+                                "name": "SDCARD_TEST_MISO_PIN",
+                                "range": null,
+                                "title": "MISO Pin",
+                                "type": "int"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "SDCARD_TEST_MODE_SPI && SDCARD_TEST",
+                                "help": "SD card SPI CS pin",
+                                "id": "SDCARD_TEST_CS_PIN",
+                                "name": "SDCARD_TEST_CS_PIN",
+                                "range": null,
+                                "title": "SPI CS Pin",
+                                "type": "int"
+                            }
+                        ],
+                        "depends_on": "SDCARD_TEST",
+                        "id": "bringup-configuration-test-basic-sd-card-operations-sd-card-settings",
+                        "title": "SD Card Settings",
+                        "type": "menu"
+                    }
+                ],
+                "depends_on": null,
+                "help": null,
+                "id": "SDCARD_TEST",
+                "name": "SDCARD_TEST",
+                "range": null,
+                "title": "Test basic SD Card operations",
                 "type": "bool"
             }
         ],

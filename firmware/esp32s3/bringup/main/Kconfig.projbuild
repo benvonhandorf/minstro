@@ -176,4 +176,102 @@ menu "Bringup Configuration"
         endmenu
 
     endmenu
+
+    config SDCARD_TEST
+        bool "Test basic SD Card operations"
+
+    menu "SD Card Settings"
+        depends on SDCARD_TEST
+
+        choice SDCARD_TEST_MODE
+            prompt "SD Card Test Mode"
+            default SDCARD_TEST_MODE_SPI
+            help
+                Select the SD card access mode
+
+            config SDCARD_TEST_MODE_SPI
+                bool "SPI Mode"
+            config SDCARD_TEST_MODE_SDMMC
+                bool "SDMMC Mode"
+        endchoice
+
+        config SDCARD_TEST_SCK_PIN
+            int "SCK Pin"
+            range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+            default 40
+            help
+                SD card clock pin
+
+        config SDCARD_TEST_CD_PIN
+            int "Card Detect Pin"
+            range -1 ENV_GPIO_OUT_RANGE_MAX
+            default 44
+            help
+                SD card detect pin
+
+        config SDCARD_TEST_DAT0_PIN
+            depends on SDCARD_TEST_MODE_SDMMC
+            int "DAT0 Pin"
+            range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+            default 39
+            help
+                SD card DAT0 pin
+
+        config SDCARD_TEST_DAT1_PIN
+            depends on SDCARD_TEST_MODE_SDMMC
+            int "DAT1 Pin"
+            range -1 ENV_GPIO_OUT_RANGE_MAX
+            default 38
+            help
+                SD card DAT1 pin
+
+        config SDCARD_TEST_DAT2_PIN
+            depends on SDCARD_TEST_MODE_SDMMC
+            int "DAT2 Pin"
+            range -1 ENV_GPIO_OUT_RANGE_MAX
+            default 43
+            help
+                SD card DAT2 pin
+
+        config SDCARD_TEST_DAT3_PIN
+            depends on SDCARD_TEST_MODE_SDMMC
+            int "DAT3 Pin"
+            range -1 ENV_GPIO_OUT_RANGE_MAX
+            default 42
+            help
+                SD card DAT3 pin
+
+        config SDCARD_TEST_CMD_PIN
+            depends on SDCARD_TEST_MODE_SDMMC
+            int "CMD Pin"
+            range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+            default 41
+            help
+                SD card CMD pin
+
+        config SDCARD_TEST_MOSI_PIN
+            depends on SDCARD_TEST_MODE_SPI
+            int "MOSI Pin"
+            range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+            default 41
+            help
+                SD card MOSI pin
+
+        config SDCARD_TEST_MISO_PIN
+            depends on SDCARD_TEST_MODE_SPI
+            int "MISO Pin"
+            range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+            default 39
+            help
+                SD card MISO pin
+
+        config SDCARD_TEST_CS_PIN
+            depends on SDCARD_TEST_MODE_SPI
+            int "SPI CS Pin"
+            range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+            default 42
+            help
+                SD card SPI CS pin
+
+    endmenu
 endmenu

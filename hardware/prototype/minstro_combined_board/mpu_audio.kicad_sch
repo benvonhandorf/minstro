@@ -2177,7 +2177,7 @@
 		)
 		(uuid "5c8427b4-4b43-4aea-aaec-f216a9dcbe36")
 	)
-	(text "I2C Addr: 0011010 0x19"
+	(text "I2C Addr: 0011010 0x1A"
 		(exclude_from_sim no)
 		(at 116.078 138.43 0)
 		(effects

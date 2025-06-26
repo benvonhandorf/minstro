@@ -3,13 +3,8 @@
 
 cmake_minimum_required(VERSION 3.5)
 
-# If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
-# existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
-# would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "/home/benvh/esp/v5.4.1/esp-idf/components/bootloader/subproject")
-  file(MAKE_DIRECTORY "/home/benvh/esp/v5.4.1/esp-idf/components/bootloader/subproject")
-endif()
 file(MAKE_DIRECTORY
+  "/home/benvh/esp/v5.4.1/esp-idf/components/bootloader/subproject"
   "/home/benvh/projects/minstro/firmware/esp32s3/bringup/build/bootloader"
   "/home/benvh/projects/minstro/firmware/esp32s3/bringup/build/bootloader-prefix"
   "/home/benvh/projects/minstro/firmware/esp32s3/bringup/build/bootloader-prefix/tmp"

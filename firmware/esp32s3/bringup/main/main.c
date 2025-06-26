@@ -22,6 +22,7 @@
 #include "bringup_i2c_test.h"
 #include "bringup_wifi_test.h"
 #include "bringup_gpio_test.h"
+#include "bringup_sdcard_test.h"
 
 static const char *TAG = "bring_up";
 
@@ -47,6 +48,8 @@ void app_main(void)
 
     wifi_test_configure();
 
+    sdcard_test_configure();
+
     ESP_LOGI(TAG, "Starting tests");
 
     led_test_start();
@@ -56,6 +59,8 @@ void app_main(void)
     gpio_test_start();
 
     wifi_test_start();
+
+    sdcard_test_start();
 
     ESP_LOGI(TAG, "Tests started");
 

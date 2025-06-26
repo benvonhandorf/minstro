@@ -58,12 +58,14 @@ void i2c_test_configure() {
         .scl_io_num = CONFIG_I2C_SCL_PIN,
         .sda_io_num = CONFIG_I2C_SDA_PIN,
         .glitch_ignore_cnt = 7,
-#ifdef CONFIG_I2C_SDA_PULLUP
+#ifdef CONFIG_I2C_ENABLE_PULLUP
         .flags.enable_internal_pullup = true,
 #else
         .flags.enable_internal_pullup = false,
 #endif
     };
+
+    ESP_LOGI(TAG, "I2C: SDA %d SCL %d", CONFIG_I2C_SDA_PIN, CONFIG_I2C_SCL_PIN);
 
     ESP_ERROR_CHECK(i2c_new_master_bus(&i2c_bus_config, &i2c_bus_handle));
 

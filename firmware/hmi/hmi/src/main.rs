@@ -83,16 +83,16 @@ fn main() -> ! {
     let pins = bsp::Pins::new(peripherals.PORT);
 
     //Configure I2C
-    let sercom1_clock = &clocks.sercom1_core(&gclk0).unwrap();
-    let pads: i2c::Pads<
-        Sercom1,
-        hal::gpio::Pin<hal::gpio::PA22, _>,
-        hal::gpio::Pin<hal::gpio::PA23, _>,
-    > = i2c::Pads::new(pins.sda, pins.scl);
+    // let sercom1_clock = &clocks.sercom1_core(&gclk0).unwrap();
+    // let pads: i2c::Pads<
+    //     Sercom1,
+    //     hal::gpio::Pin<hal::gpio::PA22, _>,
+    //     hal::gpio::Pin<hal::gpio::PA23, _>,
+    // > = i2c::Pads::new(pins.sda, pins.scl);
 
-    let mut sercom = peripherals.SERCOM1;
+    // let mut sercom = peripherals.SERCOM1;
 
-    sercom.enable_apb_clock(&peripherals.PM);
+    // sercom.enable_apb_clock(&peripherals.PM);
 
     unsafe {
         core.NVIC.set_priority(interrupt::SERCOM0, 1);
@@ -101,9 +101,13 @@ fn main() -> ! {
 
     let interrupt_pin = Some(pins.int.into_push_pull_output());
 
-    i2c_peripheral::configure_bus_status();
+    // i2c_peripheral::configure_bus_status();
 
-    i2c_peripheral::configure_sercom(sercom, ADDRESS);
+    // i2c_peripheral::configure_sercom(sercom, ADDRESS);
+    pins.scl.into_floating_input();
+    pins.sda.into_floating_input();
+
+    let mut power_sw = pins.power_sw.into_pull_up_input();
 
     let mut row_a: Pin<_, AlternateB> = pins.row_a.into_mode();
     let mut row_b: Pin<_, AlternateB> = pins.row_b.into_mode();
@@ -133,17 +137,18 @@ fn main() -> ! {
     let mut reading_b : u16;
     let mut reading_c : u16;
     let mut reading_dir : u16;
+    let mut power_state : bool = false;
 
     loop {
         //Process protocol commands
-        let command = interrupt_helpers::free(|cs| {
-            if let Some(comms_status) = i2c_peripheral::BUS_STATUS.borrow(cs).borrow_mut().as_mut()
-            {
-                comms_status.process()
-            } else {
-                None
-            }
-        });
+        // let command = interrupt_helpers::free(|cs| {
+        //     if let Some(comms_status) = i2c_peripheral::BUS_STATUS.borrow(cs).borrow_mut().as_mut()
+        //     {
+        //         comms_status.process()
+        //     } else {
+        //         None
+        //     }
+        // });
 
         for pixel in &mut led_data {
             pixel.r = 0;
@@ -163,7 +168,9 @@ fn main() -> ! {
         reading_c = adc.read(&mut row_c).unwrap();
         reading_dir = adc.read(&mut nav_dir).unwrap();
 
-        rprintln!("{}, {}, {}, {}", reading_a, reading_b, reading_c, reading_dir);
+        power_state = power_sw.is_low().unwrap();
+
+        rprintln!("{} {}, {}, {}, {}", power_state, reading_a, reading_b, reading_c, reading_dir);
 
     }
 }
