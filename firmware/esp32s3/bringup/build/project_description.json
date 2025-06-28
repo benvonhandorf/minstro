@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "bringup",
-    "project_version":    "4e880cf-dirty",
+    "project_version":    "c7fa11e-dirty",
     "project_path":       "/home/benvh/projects/minstro/firmware/esp32s3/bringup",
     "idf_path":           "/home/benvh/esp/v5.4.1/esp-idf",
     "build_dir":          "/home/benvh/projects/minstro/firmware/esp32s3/bringup/build",

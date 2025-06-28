@@ -6556,10 +6556,7 @@
                                 "help": "GPIO number (IOxx) connected to the SCL/SCK line of the I2C bus.",
                                 "id": "I2C_SCL_PIN",
                                 "name": "I2C_SCL_PIN",
-                                "range": [
-                                    0,
-                                    48
-                                ],
+                                "range": null,
                                 "title": "SCL GPIO number",
                                 "type": "int"
                             },
@@ -6569,10 +6566,7 @@
                                 "help": "GPIO number (IOxx) connected to the SDA line of the I2C bus.",
                                 "id": "I2C_SDA_PIN",
                                 "name": "I2C_SDA_PIN",
-                                "range": [
-                                    0,
-                                    48
-                                ],
+                                "range": null,
                                 "title": "SDA GPIO number",
                                 "type": "int"
                             },
@@ -6592,10 +6586,7 @@
                                 "help": "Define the I2C bus speed in kHz.\nThe default value is 100 kHz.\nThe maximum value is 1 MHz.",
                                 "id": "I2C_SPEED",
                                 "name": "I2C_SPEED",
-                                "range": [
-                                    10,
-                                    1000
-                                ],
+                                "range": null,
                                 "title": "I2C bus speed in kHz",
                                 "type": "int"
                             },
@@ -6605,10 +6596,7 @@
                                 "help": "Define the delay between scans in seconds.\nThe default value is 1000 s.",
                                 "id": "I2C_RESCAN_DELAY_S",
                                 "name": "I2C_RESCAN_DELAY_S",
-                                "range": [
-                                    1,
-                                    10000
-                                ],
+                                "range": null,
                                 "title": "Rescan frequency in seconds",
                                 "type": "int"
                             }
@@ -6772,7 +6760,10 @@
                                 "help": "SD card clock pin",
                                 "id": "SDCARD_TEST_SCK_PIN",
                                 "name": "SDCARD_TEST_SCK_PIN",
-                                "range": null,
+                                "range": [
+                                    0,
+                                    48
+                                ],
                                 "title": "SCK Pin",
                                 "type": "int"
                             },
@@ -6782,7 +6773,10 @@
                                 "help": "SD card detect pin",
                                 "id": "SDCARD_TEST_CD_PIN",
                                 "name": "SDCARD_TEST_CD_PIN",
-                                "range": null,
+                                "range": [
+                                    -1,
+                                    48
+                                ],
                                 "title": "Card Detect Pin",
                                 "type": "int"
                             },
@@ -6792,7 +6786,10 @@
                                 "help": "SD card DAT0 pin",
                                 "id": "SDCARD_TEST_DAT0_PIN",
                                 "name": "SDCARD_TEST_DAT0_PIN",
-                                "range": null,
+                                "range": [
+                                    0,
+                                    48
+                                ],
                                 "title": "DAT0 Pin",
                                 "type": "int"
                             },
@@ -6802,7 +6799,10 @@
                                 "help": "SD card DAT1 pin",
                                 "id": "SDCARD_TEST_DAT1_PIN",
                                 "name": "SDCARD_TEST_DAT1_PIN",
-                                "range": null,
+                                "range": [
+                                    -1,
+                                    48
+                                ],
                                 "title": "DAT1 Pin",
                                 "type": "int"
                             },
@@ -6812,7 +6812,10 @@
                                 "help": "SD card DAT2 pin",
                                 "id": "SDCARD_TEST_DAT2_PIN",
                                 "name": "SDCARD_TEST_DAT2_PIN",
-                                "range": null,
+                                "range": [
+                                    -1,
+                                    48
+                                ],
                                 "title": "DAT2 Pin",
                                 "type": "int"
                             },
@@ -6822,7 +6825,10 @@
                                 "help": "SD card DAT3 pin",
                                 "id": "SDCARD_TEST_DAT3_PIN",
                                 "name": "SDCARD_TEST_DAT3_PIN",
-                                "range": null,
+                                "range": [
+                                    -1,
+                                    48
+                                ],
                                 "title": "DAT3 Pin",
                                 "type": "int"
                             },
@@ -6832,7 +6838,10 @@
                                 "help": "SD card CMD pin",
                                 "id": "SDCARD_TEST_CMD_PIN",
                                 "name": "SDCARD_TEST_CMD_PIN",
-                                "range": null,
+                                "range": [
+                                    0,
+                                    48
+                                ],
                                 "title": "CMD Pin",
                                 "type": "int"
                             },
