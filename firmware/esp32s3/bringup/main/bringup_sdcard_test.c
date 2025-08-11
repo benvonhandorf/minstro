@@ -15,9 +15,9 @@
 
 #ifdef CONFIG_SDCARD_TEST
 
-#define BOARD_MINSTRO 1
+// #define BOARD_MINSTRO 1
 // #define BOARD_CARDPUTER   1
-// #define BOARD_XIAO   1
+#define BOARD_XIAO   1
 
 //Force mode for easier board switching
 #define CONFIG_SDCARD_TEST_MODE_SPI 1
@@ -26,20 +26,21 @@
 // #undef CONFIG_SDCARD_TEST_MODE_SPI
 // #define CONFIG_SDCARD_TEST_MODE_SDMMC    1
 
+// #define CONFIG_SDCARD_TEST_SDMMC_SINGLE_BIT 1
 
 // Known Boards
 
 #ifdef BOARD_MINSTRO
 // Minstro Pins
 // GPIO     SDMMC   SPI
-// 38       DAT1
+// 38       DAT1    X
 // 39       DAT0    MISO
 // --       Vss
 // 40       CLK     SCLK
 // --       Vdd
 // 41       CMD     MOSI
 // 42       DAT3    CS
-// 43       DAT2
+// 43       DAT2    X
 // --
 // 44       DET     DET
 
@@ -56,18 +57,24 @@
 #ifdef CONFIG_SDCARD_TEST_MODE_SDMMC
 
 //SDMMC Mode
-#define CONFIG_SDCARD_TEST_DAT0_PIN     GPIO_NUM_39
-#define CONFIG_SDCARD_TEST_CMD_PIN     GPIO_NUM_41
+#define CONFIG_SDCARD_TEST_CMD_PIN      GPIO_NUM_41
 #define CONFIG_SDCARD_TEST_SCK_PIN      GPIO_NUM_40
-#define CONFIG_SDCARD_TEST_DAT1_PIN       GPIO_NUM_38
-#define CONFIG_SDCARD_TEST_DAT2_PIN       GPIO_NUM_43
-#define CONFIG_SDCARD_TEST_DAT3_PIN       GPIO_NUM_42
-#define CONFIG_SDCARD_TEST_CD_PIN        GPIO_NUM_44
+#define CONFIG_SDCARD_TEST_DAT0_PIN     GPIO_NUM_39
+#define CONFIG_SDCARD_TEST_DAT1_PIN     GPIO_NUM_38
+#define CONFIG_SDCARD_TEST_DAT2_PIN     GPIO_NUM_43
+#define CONFIG_SDCARD_TEST_DAT3_PIN     GPIO_NUM_42
+#define CONFIG_SDCARD_TEST_CD_PIN       GPIO_NUM_44
+
+
+
+#ifdef CONFIG_SDCARD_TEST_SDMMC_SINGLE_BIT
 
 //Force 1 bit mode
 #define CONFIG_SDCARD_TEST_DAT1_PIN       -1
 #define CONFIG_SDCARD_TEST_DAT2_PIN       -1
 #define CONFIG_SDCARD_TEST_DAT3_PIN       -1
+
+#endif
 
 
 #endif
@@ -84,7 +91,7 @@
 #define CONFIG_SDCARD_TEST_MISO_PIN     GPIO_NUM_8
 #define CONFIG_SDCARD_TEST_MOSI_PIN     GPIO_NUM_9  
 #define CONFIG_SDCARD_TEST_SCK_PIN      GPIO_NUM_7
-#define CONFIG_SDCARD_TEST_CS_PIN       GPIO_NUM_3
+#define CONFIG_SDCARD_TEST_CS_PIN       GPIO_NUM_21
 #define CONFIG_SDCARD_TEST_CD_PIN -1
 
 #endif
@@ -93,12 +100,13 @@
 
 //SDMMC Mode
 #define CONFIG_SDCARD_TEST_DAT0_PIN     GPIO_NUM_8
-#define CONFIG_SDCARD_TEST_CMD_PIN     GPIO_NUM_9  
+#define CONFIG_SDCARD_TEST_CMD_PIN      GPIO_NUM_9  
 #define CONFIG_SDCARD_TEST_SCK_PIN      GPIO_NUM_7
-#define CONFIG_SDCARD_TEST_DAT1_PIN       -1
-#define CONFIG_SDCARD_TEST_DAT2_PIN       -1
-#define CONFIG_SDCARD_TEST_DAT3_PIN       -1
+#define CONFIG_SDCARD_TEST_DAT1_PIN     -1
+#define CONFIG_SDCARD_TEST_DAT2_PIN     -1
+#define CONFIG_SDCARD_TEST_DAT3_PIN     -1
 #define CONFIG_SDCARD_TEST_CD_PIN -1
+#define CONFIG_SDCARD_TEST_PU_PIN       GPIO_NUM_21
 
 #endif
 
@@ -192,14 +200,38 @@ static void list_files(const char *path)
     closedir(dir);
 }
 
+void check_pin_for_reset_required(uint8_t pin) {
+    if(pin >= 39 && pin <=44) {
+        gpio_reset_pin(pin);
+    }
+}
+
 void jtag_uart_pins_to_gpio()
 {
-    gpio_reset_pin(39);
-    gpio_reset_pin(40);
-    gpio_reset_pin(41);
-    gpio_reset_pin(42);
-    gpio_reset_pin(43);
-    gpio_reset_pin(44);
+
+#ifdef CONFIG_SDCARD_TEST_MODE_SPI
+        check_pin_for_reset_required(PIN_NUM_MOSI);
+        check_pin_for_reset_required(PIN_NUM_CLK);
+        check_pin_for_reset_required(PIN_NUM_CD);
+        check_pin_for_reset_required(PIN_NUM_CS);
+#endif
+
+#ifdef CONFIG_SDCARD_TEST_MODE_SDMMC
+        check_pin_for_reset_required(PIN_NUM_DAT0);
+#if PIN_NUM_DAT1 > -1
+        check_pin_for_reset_required(PIN_NUM_DAT1);
+        check_pin_for_reset_required(PIN_NUM_DAT2);
+        check_pin_for_reset_required(PIN_NUM_DAT3);
+#endif
+
+#ifdef CONFIG_SDCARD_TEST_PU_PIN
+        check_pin_for_reset_required(CONFIG_SDCARD_TEST_PU_PIN);
+#endif
+
+        check_pin_for_reset_required(PIN_NUM_CLK);
+        check_pin_for_reset_required(PIN_NUM_CMD);
+#endif
+
 }
 
 #ifdef CONFIG_SDCARD_TEST_MODE_SDMMC
@@ -322,7 +354,7 @@ static esp_err_t configure_sdcard_infrastructure()
 
     sdspi_device_config_t dev_config = SDSPI_DEVICE_CONFIG_DEFAULT();
 
-    // dev_config.gpio_cd = PIN_NUM_CD;
+    dev_config.gpio_cd = PIN_NUM_CD;
     dev_config.gpio_cs = PIN_NUM_CS;
     dev_config.gpio_wp = SDSPI_SLOT_NO_WP;
     dev_config.gpio_int = SDSPI_SLOT_NO_INT;
@@ -462,7 +494,9 @@ static void sdcard_test_task(void *args)
         gpio_set_level(PIN_NUM_CS, level);
 
         vTaskDelay(pdMS_TO_TICKS(100));
-#else
+#endif
+
+#ifdef CONFIG_SDCARD_TEST_MODE_SDMMC
         gpio_set_level(PIN_NUM_DAT0, level);
 #if PIN_NUM_DAT1 > -1
         gpio_set_level(PIN_NUM_DAT1, level);
@@ -525,8 +559,6 @@ void sdcard_test_configure()
 
     jtag_uart_pins_to_gpio();
 
-    configure_sdcard_infrastructure();
-
 #if CONFIG_SDCARD_TEST_CD_PIN != -1
     ESP_LOGI(TAG, "Configuring SD card test");
 
@@ -541,6 +573,23 @@ void sdcard_test_configure()
 
         gpio_config(&io_conf);
     }
+
+#endif
+
+#ifdef CONFIG_SDCARD_TEST_PU_PIN
+
+    {
+        // Configure card detect pin
+        gpio_config_t io_conf = {
+            .pin_bit_mask = (1ULL << CONFIG_SDCARD_TEST_PU_PIN),
+            .mode = GPIO_MODE_DEF_DISABLE,
+            .pull_up_en = GPIO_PULLUP_ENABLE,
+            .pull_down_en = GPIO_PULLDOWN_DISABLE,
+            .intr_type = GPIO_INTR_DISABLE};
+
+        gpio_config(&io_conf);
+    }
+
 
 #endif
 
@@ -600,6 +649,8 @@ gpio_config_t io_conf = {
 #endif
 
 #endif
+
+    configure_sdcard_infrastructure();
 
 #endif
 }
